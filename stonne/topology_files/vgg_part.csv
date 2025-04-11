@@ -1,0 +1,2 @@
+layer_type,R,S,C,K,X,Y,P,stride,input_neuron,output_neuron,batch
+conv,3,3,512,512,2,2,1,1,-1,-1,-1

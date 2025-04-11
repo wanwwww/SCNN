@@ -1,0 +1,2 @@
+layer_type,R,S,C,K,X,Y,P,stride,input_neuron,output_neuron,batch
+pooling,2,2,16,16,10,10,0,2,-1,-1,-1
