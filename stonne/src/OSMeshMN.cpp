@@ -54,8 +54,6 @@ OSMeshMN::~OSMeshMN() {
     for (auto it: accbufferconnectiontable) {
         delete it.second;
     }
-
-
 }
 
 //Connect a set of connections coming from the DistributionNetwork to the multipliers

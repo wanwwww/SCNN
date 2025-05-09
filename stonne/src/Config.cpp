@@ -42,6 +42,22 @@ void Config::loadFile(std::string config_file) {
         }
     }
 
+    // DRAM 
+    auto input_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.input_dram_size");
+    if(input_dram_size_conf){
+        this->m_DRAMCfg.input_dram_size = *input_dram_size_conf;
+    }
+
+    auto weight_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.weight_dram_size");
+    if(weight_dram_size_conf){
+        this->m_DRAMCfg.weight_dram_size = *weight_dram_size_conf;
+    }
+
+    auto output_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.output_dram_size");
+    if(output_dram_size_conf){
+        this->m_DRAMCfg.output_dram_size = *output_dram_size_conf;
+    }
+
     // On-chip Buffer
     auto input_buffer_size_conf = config->get_qualified_as<unsigned int>("On_Chip_Buffer.input_buffer_size");
     if(input_buffer_size_conf){
@@ -159,22 +175,6 @@ void Config::loadFile(std::string config_file) {
     if(update_latency_conf){
         this->m_UpdateSwitchCfg.latency = *update_latency_conf;
     }
-
-    //PoolingSwitch Configuration Parameters
-    auto pooling_port_conf = config->get_qualified_as<unsigned int>("PoolingSwitch.port_width");
-    if(pooling_port_conf){
-        this->m_PoolingSwitchCfg.port_width = *pooling_port_conf;
-    }
-
-    auto pooling_buffers_conf = config->get_qualified_as<unsigned int>("PoolingSwitch.buffers_capacity");
-    if(pooling_buffers_conf){
-        this->m_PoolingSwitchCfg.buffers_capacity = *pooling_buffers_conf;
-    }
-
-    auto pooling_latency_conf = config->get_qualified_as<unsigned int>("PoolingSwitch.latency");
-    if(pooling_latency_conf){
-        this->m_PoolingSwitchCfg.latency = *pooling_latency_conf;
-    }
     
     //SDMemory Configuration Parameters
     auto sdmemory_dn_bw_conf = config->get_qualified_as<unsigned int>("SDMemory.dn_bw");  //DN_BW
@@ -220,14 +220,19 @@ void Config::reset() {
     // m_DSwitchCfg.port_width=16;  //Size in bits
 
 // ---------------------------------------------------------
+// DRAM configuration parameters
+// ---------------------------------------------------------
+    m_DRAMCfg.input_dram_size = 2;  // size in MB
+    m_DRAMCfg.weight_dram_size = 3;
+    m_DRAMCfg.output_dram_size = 2;
+
+// ---------------------------------------------------------
 // On-chip buffer configuration parameters
 // ---------------------------------------------------------
     m_BufferCfg.input_buffer_size = 32;  // size in KB
     m_BufferCfg.weight_buffer_size = 128;
     m_BufferCfg.neuron_state_buffer_size = 8;
     m_BufferCfg.output_buffer_size = 1;
-
-
 
 // ---------------------------------------------------------
 // MSNetwork Configuration Parameters
@@ -277,15 +282,6 @@ void Config::reset() {
     m_UpdateSwitchCfg.latency = 1;
     m_UpdateSwitchCfg.port_width = 16;
 
-
-// ---------------------------------------------------------
-// PoolingSwitch Configuration Parameters
-// ---------------------------------------------------------
-    m_PoolingSwitchCfg.buffers_capacity = 256;
-    m_PoolingSwitchCfg.latency = 1;
-    m_PoolingSwitchCfg.port_width = 16;
-
-
 // ---------------------------------------------------------
 // SDMemory Controller Configuration Parameters
 // ---------------------------------------------------------
@@ -324,6 +320,9 @@ void Config::printConfiguration(std::ofstream& out, unsigned int indent) {
         //this->m_DSwitchCfg.printConfiguration(out, indent+IND_SIZE);
         //out << "," << std::endl;
 
+        this->m_DRAMCfg.printConfiguration(out, indent+IND_SIZE);
+        out << "," << std::endl;
+
         this->m_BufferCfg.printConfiguration(out, indent+IND_SIZE);
         out << "," << std::endl;
 
@@ -340,10 +339,6 @@ void Config::printConfiguration(std::ofstream& out, unsigned int indent) {
         this->m_UpdateNetworkCfg.printConfiguration(out, indent+IND_SIZE);
         out << "," << std::endl;
         this->m_UpdateSwitchCfg.printConfiguration(out, indent+IND_SIZE);
-        out << "," << std::endl;
-        this->m_PoolingNetworkCfg.printConfiguration(out, indent+IND_SIZE);
-        out << "," << std::endl;
-        this->m_PoolingSwitchCfg.printConfiguration(out, indent+IND_SIZE);
         out << "," << std::endl;
         this->m_SDMemoryCfg.printConfiguration(out, indent+IND_SIZE);
         out  << std::endl; //Take care of the comma since this is the last one
@@ -373,6 +368,18 @@ void Config::printConfiguration(std::ofstream& out, unsigned int indent) {
 //         out << ind(indent+IND_SIZE) << "\"port_width\" : " << this->port_width  << std::endl;
 //     out << ind(indent) << "}";
 // }
+
+
+// -----------------------------------------------------------------------------------------------
+// DRAMConfig printing function
+// -----------------------------------------------------------------------------------------------
+void DRAMConfig::printConfiguration(std::ofstream& out, unsigned int indent){
+    out << ind(indent) << "\"DRAM Buffer\" : {"<<std::endl; // ind是一个自定义的函数，用于生成一个缩进
+    out << ind(indent+IND_SIZE) << "\"input_dram_size\" : " << this->input_dram_size << "," << std::endl;
+    out << ind(indent+IND_SIZE) << "\"weight_dram_size\" : " << this->weight_dram_size << "," << std::endl;
+    out << ind(indent+IND_SIZE) << "\"output_dram_size\" : " << this->output_dram_size << "," << std::endl;
+    out << ind(indent) << "}";
+}
 
 // -----------------------------------------------------------------------------------------------
 // BufferConfig printing function
@@ -479,32 +486,6 @@ void UpdateSwitchConfig::printConfiguration(std::ofstream& out, unsigned int ind
         out << ind(indent+IND_SIZE) << "\"port_width\" : " << this->port_width << std::endl;
     out << ind(indent) << "}";
 }
-
-
-// -----------------------------------------------------------------------------------------------
-// poolingNetworkConfig printing function
-// -----------------------------------------------------------------------------------------------
-void poolingNetworkConfig::printConfiguration(std::ofstream& out, unsigned int indent) {
-    out << ind(indent) << "\"PoolingNetwork\" : {" << std::endl;
-        //out << ind(indent+IND_SIZE) << "\"mem_controller_type\" : " << "\"" << get_string_memory_controller_type(this->mem_controller_type) << "\""  << "," << std::endl;
-        out << ind(indent+IND_SIZE) << "null" << std::endl;
-        
-    out << ind(indent) << "}";
-}
-
-// -----------------------------------------------------------------------------------------------
-// PoolingSwitchConfig printing function
-// -----------------------------------------------------------------------------------------------
-void PoolingSwitchConfig::printConfiguration(std::ofstream& out, unsigned int indent) {
-    out << ind(indent) << "\"PoolingSwitch\" : {" << std::endl;
-        //out << ind(indent+IND_SIZE) << "\"mem_controller_type\" : " << "\"" << get_string_memory_controller_type(this->mem_controller_type) << "\""  << "," << std::endl;
-        out << ind(indent+IND_SIZE) << "\"latency\" : " << this->latency << "," << std::endl;
-        out << ind(indent+IND_SIZE) << "\"buffers_capacity\" : " << this->buffers_capacity << "," << std::endl;
-        out << ind(indent+IND_SIZE) << "\"port_width\" : " << this->port_width << std::endl;
-    out << ind(indent) << "}";
-}
-
-
 
 // -----------------------------------------------------------------------------------------------
 // SDMemoryConfig printing function

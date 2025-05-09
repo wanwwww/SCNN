@@ -30,6 +30,19 @@
 
 //--------------------------------------------------------------------
 // ADD
+// DRAM configuration parameters
+//--------------------------------------------------------------------
+class DRAMConfig {
+    public:
+        unsigned int input_dram_size;   // KB
+        unsigned int weight_dram_size;    
+        unsigned int output_dram_size;
+    
+        void printConfiguration(std::ofstream& out, unsigned int indent);
+    };
+
+//--------------------------------------------------------------------
+// ADD
 // On-chip buffer configuration parameters
 //--------------------------------------------------------------------
 class BufferConfig {
@@ -128,26 +141,6 @@ public:
     void printConfiguration(std::ofstream& out, unsigned int indent);
 };
 
-
-//--------------------------------------------------------------------
-// PoolingNetwork Configuration Parameters
-//--------------------------------------------------------------------
-class poolingNetworkConfig {
-public:
-    void printConfiguration(std::ofstream& out, unsigned int indent);  
-};
-
-//--------------------------------------------------------------------
-// PoolingSwitch Configuration Parameters
-//--------------------------------------------------------------------
-class PoolingSwitchConfig {
-public:
-    unsigned int port_width; //Bit width
-    unsigned int buffers_capacity;
-    cycles_t latency; //Latency of the AS to perform. This number is expressed in number of cycles. //TODO To implement
-    void printConfiguration(std::ofstream& out, unsigned int indent);
-};
-
 //--------------------------------------------------------------------
 // SDMemory Controller Configuration Parameters
 //--------------------------------------------------------------------
@@ -188,6 +181,9 @@ public:
     //DSwitch Configuration
     //DSwitchConfig m_DSwitchCfg;
 
+    // DRAM configuration
+    DRAMConfig m_DRAMCfg;
+
     // On-chip buffer configuration
     BufferConfig m_BufferCfg;
 
@@ -212,12 +208,6 @@ public:
     //UpdateSwitch Configuration
     UpdateSwitchConfig m_UpdateSwitchCfg;
 
-    //PoolingNetwork Configuration
-    poolingNetworkConfig m_PoolingNetworkCfg;
-
-    //PoolingSwitch Configuration
-    PoolingSwitchConfig m_PoolingSwitchCfg;
-
     //SDMemory controller configuration
     SDMemoryConfig m_SDMemoryCfg;
 
@@ -233,12 +223,12 @@ public:
     //print the configuration parameters
     void printConfiguration(std::ofstream& out, unsigned int indent);
 
-    //Indicates whether according to the hardware parameters, sparsity is enabled in the architecture
-    bool sparsitySupportEnabled(); 
+    // //Indicates whether according to the hardware parameters, sparsity is enabled in the architecture
+    // bool sparsitySupportEnabled(); 
 
-    //Indicates whether according to the hardware parameters, the operation of CONV itself is supported. Otherwise, the operation can be done
-    //using GEMM operation
-    bool convOperationSupported(); 
+    // //Indicates whether according to the hardware parameters, the operation of CONV itself is supported. Otherwise, the operation can be done
+    // //using GEMM operation
+    // bool convOperationSupported(); 
 };
 
 

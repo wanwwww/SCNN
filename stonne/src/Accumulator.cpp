@@ -73,22 +73,22 @@ void Accumulator::setOutputConnection(Connection* outputConnection) {
 //Configuration settings (control signals)
 // 将output_fifo中的数据发送到输出连接中 
 void Accumulator::send() {
-        if(!output_fifo->isEmpty()) {
-            std::vector<DataPackage*> vector_to_send_parent;
-            while(!output_fifo->isEmpty()) {
-                 DataPackage* pck = output_fifo->pop();
-                 vector_to_send_parent.push_back(pck);
-            }
-
-        //Sending if there is something
-            #ifdef DEBUG_ASWITCH_FUNC
-                std::cout << "[ACCUMULATOR_FUNC] Cycle " << local_cycle << ", Accumulator " << this->n_accumulator << " has sent a psum to memory (FORWARDING DATA)" << std::endl;
-            #endif
-
-	        this->accumulatorStats.n_memory_send++;
-            // 这个输出连接是与总线的连接 
-            this->outputConnection->send(vector_to_send_parent); //Send the data to the corresponding output
+    if(!output_fifo->isEmpty()) {
+        std::vector<DataPackage*> vector_to_send_parent;
+        while(!output_fifo->isEmpty()) {
+                DataPackage* pck = output_fifo->pop();
+                vector_to_send_parent.push_back(pck);
         }
+
+    //Sending if there is something
+        #ifdef DEBUG_ASWITCH_FUNC
+            std::cout << "[ACCUMULATOR_FUNC] Cycle " << local_cycle << ", Accumulator " << this->n_accumulator << " has sent a psum to memory (FORWARDING DATA)" << std::endl;
+        #endif
+
+        this->accumulatorStats.n_memory_send++;
+        // 这个输出连接是与总线的连接 
+        this->outputConnection->send(vector_to_send_parent); //Send the data to the corresponding output
+    }
     
 }
 

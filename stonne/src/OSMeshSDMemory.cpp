@@ -91,7 +91,7 @@ void OSMeshSDMemory::setWriteConnections(std::vector<Connection*> write_port_con
 
 // 设置加载的层 
 void OSMeshSDMemory::setLayer(DNNLayer* dnn_layer, address_t MK_address, address_t KN_address, address_t output_address, address_t neuron_state, Dataflow dataflow) {
-    //std::cout<<"debug"<<std::endl;
+    //std::cout<<"debug in setLayer"<<std::endl;
     this->dnn_layer = dnn_layer;
     //assert(this->dnn_layer->get_layer_type()==DenseGEMM);  // This controller only supports GEMM with one sparse and one dense
     //this->dataflow = dataflow; 
@@ -115,10 +115,9 @@ void OSMeshSDMemory::setLayer(DNNLayer* dnn_layer, address_t MK_address, address
     this->MK_address = MK_address;
     this->KN_address = KN_address;
 
-
   //  this->output_size = dim_sta*dim_str;
     this->output_size = M*N;
-
+    //std::cout<<"debug in setLayer end"<<std::endl;
 }
 
 
@@ -172,9 +171,6 @@ void OSMeshSDMemory::cycle() {
         // 配置AN，也就是配置AN中每个AS需要进行累加部分和的次数为iter_k，即配置AS的变量n_psums为iter_k
         this->reduce_network->configureSignals(tile1, this->dnn_layer, this->ms_rows*this->ms_cols, this->iter_K);
         //std::cout<<"2"<<std::endl;
-        // add
-        // 配置池化网络
-        this->pooling_network->configureSignals(tile1, this->ms_rows, this->ms_cols);
 
         iteration_completed=false;
         //std::cout<<"config complete"<<std::endl;
@@ -197,6 +193,7 @@ void OSMeshSDMemory::cycle() {
             this->all_timestamp_required_output = iter_Timestamp*2*M*N;
             this->one_timestamp_required_output = 2*M*N;
             this->one_PE_requierd_output = 2*this->rows_used*this->cols_used;
+            //std::cout<<"all_timestamp_required_output ： "<<this->all_timestamp_required_output<<std::endl;
         }
     }
     
@@ -204,6 +201,7 @@ void OSMeshSDMemory::cycle() {
 
     // 分发数据状态，分发的是当前tile的数据 
     if(current_state == OS_DIST_INPUTS) {
+        //std::cout<<"============================================================="<<std::endl;
 
         //std::cout<<"Current timestamp : "<<current_Timestamp<<std::endl;
         
@@ -217,9 +215,9 @@ void OSMeshSDMemory::cycle() {
             int index_N=current_N*T_N;
             // 从内存中读取输入，每次取一个数据 
             data = this->KN_address[(index_N+i)*this->K + this->current_K]; //Notice that in dense operation the KN matrix is actually NK 
-            // std::cout<<"the address of weight is : "<<(index_N+i)*this->K + this->current_K<<std::endl;
-            // std::cout<<"The weight taken out is : "<<data<<std::endl;
-            // std::cout<<std::endl;
+            //std::cout<<"the address of weight is : "<<(index_N+i)*this->K + this->current_K<<std::endl;
+            //std::cout<<"The weight taken out is : "<<data<<std::endl;
+            //std::cout<<std::endl;
             sdmemoryStats.n_SRAM_weight_reads++;  
             // (size_t size_package, data_t data, operand_t data_type, id_t source,traffic_t traffic_type, unsigned int unicast_dest) : 
             DataPackage* pck_to_send = new DataPackage(sizeof(data_t), data, WEIGHT, 0, UNICAST, i);
@@ -233,14 +231,14 @@ void OSMeshSDMemory::cycle() {
             data_t data;//Accessing to memory
             int index_M=current_M*T_M;  // 注意input数据读取的地址
             data = this->MK_address[current_Timestamp*M*K+(index_M+i)*this->K + this->current_K]; 
-            // std::cout<<"the address of input is : "<<current_Timestamp*M*K+(index_M+i)*this->K + this->current_K<<std::endl;
-            // std::cout<<"The input taken out is : "<<data<<std::endl;
-            // std::cout<<std::endl;
+            //td::cout<<"the address of input is : "<<current_Timestamp*M*K+(index_M+i)*this->K + this->current_K<<std::endl;
+            //std::cout<<"The input taken out is : "<<data<<std::endl;
+            //std::cout<<std::endl;
             sdmemoryStats.n_SRAM_input_reads++;  
             DataPackage* pck_to_send = new DataPackage(sizeof(data_t), data, IACTIVATION, 0, UNICAST, i+this->ms_cols);
             this->sendPackageToInputFifos(pck_to_send);
         }
-
+        //std::cout<<std::endl;
         this->current_K+=1;
 
         // K -> N -> M
@@ -290,7 +288,8 @@ void OSMeshSDMemory::cycle() {
             // n_iterations_completed % this->iter_N 得到当前迭代属于的N列块索引
             // 乘以 T_N，计算当前 N 列块的起始位置（列号）
             unsigned int current_tile_M_pointer = (n_iterations_completed /this->iter_N)*this->T_M;  //Change this to change the dataflow
-            unsigned int current_tile_N_pointer = (n_iterations_completed % this->iter_N)*T_N;
+            //unsigned int current_tile_N_pointer = (n_iterations_completed % this->iter_N)*T_N;
+            unsigned int current_tile_N_pointer = 0;
             // 当前虚拟节点在当前数据块内的行和列位置。
             unsigned int vn_M_pointer = vn / this->cols_used;
             unsigned int vn_N_pointer = vn % this->cols_used;
@@ -305,6 +304,7 @@ void OSMeshSDMemory::cycle() {
             switch (pck_received->get_data_type()){
                 case VTH:
                     this->neuron_state[addr_offset] = data;
+                    
                     //std::cout<<"the data type is neuron state"<<std::endl;
                     break;
                 case SPIKE:
@@ -313,6 +313,7 @@ void OSMeshSDMemory::cycle() {
                         //std::cout<<"-------------------------------------------------- the address of spike with pooling "<<addr_pooling<<std::endl;
                     } else {
                         this->output_address[timestamp_offset+addr_offset] = data;
+                        //std::cout<<"output write addr is : "<<addr_offset<<std::endl;
                     }
                     //std::cout<<"the data type is spike"<<std::endl;
                     break;
@@ -360,11 +361,11 @@ void OSMeshSDMemory::cycle() {
                 }
             }
 
-            if(current_output == this->one_timestamp_required_output){  // 完成一个时间步的计算 
-                n_iterations_completed = 0;
-                current_output = 0;
-                n_timestamp_completed++;
-            }
+            // if(current_output == this->one_timestamp_required_output){  // 完成一个时间步的计算 
+            //     n_iterations_completed = 0;
+            //     current_output = 0;
+            //     n_timestamp_completed++;
+            // }
 
             delete pck_received; //Deleting the current package
             //std::cout<<"the length of write_fifo (after) : "<<write_fifo->size()<<std::endl;
@@ -406,6 +407,13 @@ bool OSMeshSDMemory::isExecutionFinished() {
 
 OSMeshControllerState OSMeshSDMemory::getCurrentState(){
     return this->current_state;
+}
+
+void OSMeshSDMemory::reset(){
+    this->execution_finished = false;
+    this->current_progress = 0;
+    this->current_state = OS_CONFIGURING;
+    this->current_Timestamp = 0;
 }
 
 
@@ -550,14 +558,13 @@ void OSMeshSDMemory::receive() { //TODO control if there is no space in queue
         if(write_port_connections[i]->existPendingData()) {
             //std::cout<<"debug 6"<<std::endl;
             std::vector<DataPackage*> data_received = write_port_connections[i]->receive();
-             for(int i=0; i<data_received.size(); i++) {
-                //std::cout<<"the length of dataPackage(OSMeshSDMemory.cpp) : "<<data_received.size()<<std::endl;
-                write_fifo->push(data_received[i]);
-             }
-        }    
+            for(int i=0; i<data_received.size(); i++) {
+            //std::cout<<"the length of dataPackage(OSMeshSDMemory.cpp) : "<<data_received.size()<<std::endl;
+            write_fifo->push(data_received[i]);
+            }
+        }   
     }
 }
-
 
 void OSMeshSDMemory::printStats(std::ofstream& out, unsigned int indent) {
     out << ind(indent) << "\"SDMemoryStats\" : {" << std::endl; //TODO put ID

@@ -131,8 +131,6 @@ void MultiplierOSStats::print(std::ofstream& out, unsigned int indent) {
 
 }
 
-
-
 //--------------- ASwitchStats implementation ---------------
 // ----------------------------------------------------------
 

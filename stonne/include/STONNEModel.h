@@ -25,7 +25,6 @@
 //#include "TileGenerator/TileGenerator.h"
 
 #include "NeuronStateUpdater.h"
-#include "PoolingNetwork.h"
 
 // Stonne类是整个模拟器的核心，封装了硬件参数、功能模块、连接逻辑和运行流程
 class Stonne {
@@ -41,7 +40,6 @@ public:
     ReduceNetwork* asnet; //ART Network
     // add
     NeuronStateUpdater* updatenet;
-    PoolingNetwork* poolingnet;
 
     OSMeshSDMemory* mem; //MemoryController abstraction (e.g., SDMemory from MAERI)
 
@@ -72,10 +70,6 @@ public:
     void connectASNandUpdateNet(); //连接归约网络和膜电位更新网络
     void connectionUpdateNetandBus();  // 连接膜电位更新网络和总线
     void connectBusandMemory(); //Connect the bus and the memory write ports. 将总线的输出连接到内存，完成存储
-
-    void connectUpdateNetandPoolingNet();
-    void connectPoolingNetandBus();
-
 
     void cycle(); //模拟硬件的一个周期 
     void printStats();

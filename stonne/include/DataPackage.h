@@ -5,6 +5,7 @@
 
 #include "types.h"
 #include <iostream>
+#include <vector>
 
 /*
 
@@ -23,6 +24,14 @@ public:
     // 数据包的大小、数据本身、数据类型、数据包来源 
     size_t size_package; //Actual size of the package. This just accounts for the truly data that is sent in a real implementation
     data_t data; //Data in the package
+
+    std::vector<bool> data_vector; // add  建模二进制串数据
+    bool data_result; // add 建模池化结果
+    // 为池化模块增加的变量（为了计算池化结果的写地址）
+    int channel_num;  
+    int retrieve_num;
+    int location;
+
     operand_t data_type; //Type of data (i.e., WEIGHT, IACTIVATION, OACTIVATION, PSUM)
     id_t source; //Source that sent the package
    
@@ -41,6 +50,10 @@ public:
     
     //General constructor to be reused in both types of packages
     DataPackage(size_t size_package, data_t data, operand_t data_type, id_t source);
+
+    // add
+    DataPackage(std::vector<bool> data, int channel_num, int retrieve_num);
+    DataPackage(bool data, int channel_num, int retrieve_num, int location);
     
     //DS Package constructors for creating unicasts, multicasts and broadcasts packages
     //General constructor for DS
@@ -59,6 +72,7 @@ public:
 
     //Getters 访问器方法，用于访问私有成员变量
     const size_t get_size_package()            const {return this->size_package;}
+    const std::vector<bool> get_data_vector()  const {return this->data_vector;}  // add 建模二进制的数据
     const data_t get_data()                    const {return this->data;}
     const operand_t get_data_type()            const {return this->data_type;}
     const id_t get_source()                    const {return this->source;}

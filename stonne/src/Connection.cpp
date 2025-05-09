@@ -41,6 +41,16 @@ void Connection::send(vector<DataPackage*> data_p) {
     return; 
 }
 
+void Connection::send_pooling_result(DataPackage* data) {
+
+    this->data_pooling_result = data; //list of pointers assignment. All the vectors are replicated to save a copy and track it.
+    this->pending_data = true;
+    
+    //Tracking parameters
+    this->connectionStats.n_sends+=1;   
+    return; 
+}
+
 // 从连接中接收数据  
 //Return the packages from the interconnection
 vector<DataPackage*> Connection::receive() { 
@@ -58,6 +68,23 @@ vector<DataPackage*> Connection::receive() {
     this->connectionStats.n_receives+=1;
   
     return data; //Return empty list indicating that there is no data
+}
+
+DataPackage* Connection::receive_pooling_result() { 
+    
+    if(this->pending_data) {
+            this->pending_data = false;
+	    return this->data_pooling_result;
+    }
+
+    //If there is no pending data
+    //data_pooling_result.clear(); //Set the list of elements to return to 0
+    this->pending_data = false;
+    
+    //Tracking parameters
+    this->connectionStats.n_receives+=1;
+  
+    return data_pooling_result; //Return empty list indicating that there is no data
 }
 
 void Connection::printEnergy(std::ofstream &out, unsigned int indent, std::string wire_type) {

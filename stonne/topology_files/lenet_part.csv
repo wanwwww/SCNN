@@ -1,2 +1,2 @@
-layer_type,R,S,C,K,X,Y,P,stride,input_neuron,output_neuron,batch
-pooling,2,2,16,16,10,10,0,2,-1,-1,-1
+layer_type,R,S,C,K,X,Y,P,stride,pooling_size,pooling_stride,input_neuron,output_neuron,batch
+conv,3,3,3,32,64,64,1,1,2,2,-1,-1,-1

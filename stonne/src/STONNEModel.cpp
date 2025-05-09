@@ -43,10 +43,9 @@ Stonne::Stonne(Config stonne_cfg) {
     // add 
     // 实例化膜电位更新网络
     this->updatenet = new NeuronStateUpdater(3, "NeuronStateUpdater", stonne_cfg);
-    this->poolingnet = new PoolingNetwork(4, "PoolingNetwork", stonne_cfg);
 
     // 实例化总线
-    this->collectionBus = new Bus(5, "CollectionBus", stonne_cfg); 
+    this->collectionBus = new Bus(4, "CollectionBus", stonne_cfg); 
     //this->lt = new LookupTable(5, "LookUpTable", stonne_cfg, outputASConnection, outputLTConnection);
 
     // 内存控制器
@@ -54,9 +53,7 @@ Stonne::Stonne(Config stonne_cfg) {
 
     //std::cout<<this->mem<<std::endl;
 
-
     this->mem->setUpdateNetwork(updatenet);  // add
-    this->mem->setPoolingNetwork(poolingnet);
 
     // 将加法器网络和乘法器网络添加到内存控制器中 
     //Adding to the memory controller the asnet and msnet to reconfigure them if needed
@@ -81,15 +78,6 @@ Stonne::Stonne(Config stonne_cfg) {
     this->connectASNandUpdateNet(); // 连接归约网络和膜电位更新网络
     this->connectionUpdateNetandBus(); // 连接更新网络和总线
     this->connectBusandMemory();  // 连接从总线输出到内存 
-
-
-    // 如果启用池化模块的话，连接膜电位更新模块和池化模块、连接池化模块和总线
-    if(this->pooling_enabled){
-        //std::cout<<"pooling_enabled"<<std::endl;
-        this->connectUpdateNetandPoolingNet();
-        //std::cout<<"7"<<std::endl;
-        this->connectPoolingNetandBus();
-    }
   
     //DEBUG PARAMETERS
     //this->time_ds = 0;
@@ -120,7 +108,6 @@ Stonne::~Stonne() {
     delete this->collectionBus;
 
     delete this->updatenet;
-    delete this->poolingnet;
 
     if(layer_loaded) {
         delete this->dnn_layer;
@@ -203,24 +190,10 @@ void Stonne::connectBusandMemory() {
     this->mem->setWriteConnections(write_port_connections);      
 }
 
-// add
-// 连接膜电位更新模块和池化模块
-void Stonne::connectUpdateNetandPoolingNet(){
-    //std::cout<<"connectUpdateNetandPoolingNet"<<std::endl;
-    std::vector<Connection*> connectionPoolingNet = this->poolingnet->getInputConnections();
-    //std::cout<<"get the poolingnet inputconnections"<<std::endl;
-    this->updatenet->setPoolingconnections(connectionPoolingNet);
-}
-
-// 连接池化模块和总线模块
-void Stonne::connectPoolingNetandBus(){
-    std::vector<std::vector<Connection*>> connectionsBus = this->collectionBus->getInputConnections();
-    this->poolingnet->setOutputConnection(connectionsBus);
-}
-
 // 
 void Stonne::loadDNNLayer(Layer_t layer_type, std::string layer_name, unsigned int R, unsigned int S, unsigned int C, unsigned int K, unsigned int G, unsigned int N, unsigned int X, unsigned int Y, unsigned int strides, address_t input_address, address_t filter_address, address_t output_address, address_t neuron_state, Dataflow dataflow) {
     //std::cout<<"calling loadDNNLayer begin"<<std::endl;
+    
     assert((C % G)==0); //G must be multiple of C
     assert((K % G)==0); //G must be multiple of K
     assert(X>=R);
@@ -230,14 +203,13 @@ void Stonne::loadDNNLayer(Layer_t layer_type, std::string layer_name, unsigned i
     } 
     this->dnn_layer = new DNNLayer(layer_type, layer_name, R,S, C, K, G, N, X, Y, strides);   
     this->layer_loaded = true;
-    //std::cout<<"debug in "<<std::endl;
+    //std::cout<<"debug"<<std::endl;
     //std::cout << "this->mem: " << this->mem << std::endl;
-
+    
     this->mem->setLayer(this->dnn_layer, input_address, filter_address, output_address, neuron_state, dataflow);
     //std::cout<<"debug out"<<std::endl;
     //std::cout<<"calling loadDNNLayer end"<<std::endl;
 }
-
 
 void Stonne::loadDenseGEMM(std::string layer_name, unsigned int N, unsigned int K, unsigned int M, address_t MK_matrix, address_t KN_matrix, address_t output_matrix, address_t neuron_state, Dataflow dataflow) {
     //Setting GEMM (from SIGMA) parameters onto CNN parameters:
@@ -314,8 +286,8 @@ void Stonne::cycle() {
     bool execution_finished=false;
     while(!execution_finished) {
         // std::cout<<std::endl;
-        //std::cout<<"cycle : "<<this->n_cycles<<std::endl;
-        //std::cout<<"mem state : "<<this->mem->getCurrentState()<<std::endl;
+        // std::cout<<"cycle : "<<this->n_cycles<<std::endl;
+        // std::cout<<"mem state : "<<this->mem->getCurrentState()<<std::endl;
         auto start = std::chrono::steady_clock::now();
         this->mem->cycle();
         auto end = std::chrono::steady_clock::now();
@@ -323,16 +295,6 @@ void Stonne::cycle() {
         //std::cout<<"mem completed"<<std::endl;
 
         this->collectionBus->cycle(); 
-
-        // add 
-        if(pooling_enabled){
-            start = std::chrono::steady_clock::now();
-            //std::cout<<"poolingnet start"<<std::endl;
-            this->poolingnet->cycle();
-            end = std::chrono::steady_clock::now();
-            this->time_pooling+=std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-            //std::cout<<"poolingnet completed"<<std::endl;
-        }
 
         // add
         start = std::chrono::steady_clock::now();
@@ -366,10 +328,10 @@ void Stonne::cycle() {
         //if(this->n_cycles > 25) { assert(1==0);}
     }
 
-    if(this->stonne_cfg.print_stats_enabled) { //If sats printing is enable
-        this->printStats();
-        this->printEnergy();
-    }
+    // if(this->stonne_cfg.print_stats_enabled) { //If sats printing is enable
+    //     this->printStats();
+    //     this->printEnergy();
+    // }
 
 }
 
@@ -413,7 +375,6 @@ void Stonne::printStats() {
         this->msnet->printConfiguration(out, indent);
         out << "," << std::endl;
 
-        
         //Printing global statistics
         this->printGlobalStats(out, indent);
         out << "," << std::endl;        
@@ -429,8 +390,6 @@ void Stonne::printStats() {
         out << "," << std::endl;
         this->collectionBus->printStats(out, indent);
         out << std::endl;
-        
-     
     
     out << "}" << std::endl;
     out.close();
@@ -453,8 +412,6 @@ void Stonne::printEnergy() {
     out.open(output_directory_str+"output_stats_layer_"+this->dnn_layer->get_name()+"_architecture_MSes_"+std::to_string(num_ms)+"_dnbw_"+std::to_string(dn_bw)+"_"+"rn_bw_"+std::to_string(rn_bw)+"timestamp_"+std::to_string((int)time(NULL))+".counters"); //TODO Modify name somehow
     unsigned int indent=0;
     out << "CYCLES=" <<  this->n_cycles << std::endl; //This is to calculate the static energy
-    out << "[DSNetwork]" << std::endl;
-    //this->dsnet->printEnergy(out, indent);  //DSNetworkTop //DSNetworks //DSwitches
     out << "[MSNetwork]" << std::endl;
     this->msnet->printEnergy(out, indent);
     out << "[ReduceNetwork]" << std::endl;
@@ -464,9 +421,7 @@ void Stonne::printEnergy() {
     out << "[CollectionBus]" << std::endl;
     this->collectionBus->printEnergy(out, indent);
     out << std::endl;
-
     out.close();
-
 }
 
 //Local function to the accelerator to print the globalStats

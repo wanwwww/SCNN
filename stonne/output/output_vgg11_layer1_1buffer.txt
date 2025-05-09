@@ -1,0 +1,779 @@
+Call runConv_DataFlow function !!! 1
+[1;33mStart simulation layer : [0m1 conv
+=============================================== weight loop ===================================================== 0/1
+load weight cycles : 258
+current weight loop begin cycles : 258
+======================================== input loop ========================================= 0/63
+load input cycles : 136
+process_conv cycles : 700
+write result cycles : 113
+
+Global cycles : 1207
+======================================== input loop ========================================= 1/63
+load input cycles : 269
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 2481
+======================================== input loop ========================================= 2/63
+load input cycles : 191
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 3677
+======================================== input loop ========================================= 3/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 5025
+======================================== input loop ========================================= 4/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 6245
+======================================== input loop ========================================= 5/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 7593
+======================================== input loop ========================================= 6/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 8813
+======================================== input loop ========================================= 7/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 10161
+======================================== input loop ========================================= 8/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 11381
+======================================== input loop ========================================= 9/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 12729
+======================================== input loop ========================================= 10/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 13949
+======================================== input loop ========================================= 11/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 15297
+======================================== input loop ========================================= 12/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 16517
+======================================== input loop ========================================= 13/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 17865
+======================================== input loop ========================================= 14/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 19085
+======================================== input loop ========================================= 15/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 20433
+======================================== input loop ========================================= 16/63
+load input cycles : 775
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 22213
+======================================== input loop ========================================= 17/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 23561
+======================================== input loop ========================================= 18/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 24781
+======================================== input loop ========================================= 19/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 26129
+======================================== input loop ========================================= 20/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 27349
+======================================== input loop ========================================= 21/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 28697
+======================================== input loop ========================================= 22/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 29917
+======================================== input loop ========================================= 23/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 31265
+======================================== input loop ========================================= 24/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 32485
+======================================== input loop ========================================= 25/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 33833
+======================================== input loop ========================================= 26/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 35053
+======================================== input loop ========================================= 27/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 36401
+======================================== input loop ========================================= 28/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 37621
+======================================== input loop ========================================= 29/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 38969
+======================================== input loop ========================================= 30/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 40189
+======================================== input loop ========================================= 31/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 41537
+======================================== input loop ========================================= 32/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 42757
+======================================== input loop ========================================= 33/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 44105
+======================================== input loop ========================================= 34/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 45325
+======================================== input loop ========================================= 35/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 46673
+======================================== input loop ========================================= 36/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 47893
+======================================== input loop ========================================= 37/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 49241
+======================================== input loop ========================================= 38/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 50461
+======================================== input loop ========================================= 39/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 51809
+======================================== input loop ========================================= 40/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 53029
+======================================== input loop ========================================= 41/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 54377
+======================================== input loop ========================================= 42/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 55597
+======================================== input loop ========================================= 43/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 56945
+======================================== input loop ========================================= 44/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 58165
+======================================== input loop ========================================= 45/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 59513
+======================================== input loop ========================================= 46/63
+load input cycles : 775
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 61293
+======================================== input loop ========================================= 47/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 62641
+======================================== input loop ========================================= 48/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 63861
+======================================== input loop ========================================= 49/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 65209
+======================================== input loop ========================================= 50/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 66429
+======================================== input loop ========================================= 51/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 67777
+======================================== input loop ========================================= 52/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 68997
+======================================== input loop ========================================= 53/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 70345
+======================================== input loop ========================================= 54/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 71565
+======================================== input loop ========================================= 55/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 72913
+======================================== input loop ========================================= 56/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 74133
+======================================== input loop ========================================= 57/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 75481
+======================================== input loop ========================================= 58/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 76701
+======================================== input loop ========================================= 59/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 78049
+======================================== input loop ========================================= 60/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 79269
+======================================== input loop ========================================= 61/63
+load input cycles : 343
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 80617
+======================================== input loop ========================================= 62/63
+load input cycles : 215
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 81837
+======================================== input loop ========================================= 63/63
+load input cycles : 343
+process_conv cycles : 700
+write result cycles : 113
+
+Global cycles : 82993
+=============================================== weight loop ===================================================== 1/1
+load weight cycles : 359
+current weight loop begin cycles : 83352
+======================================== input loop ========================================= 0/63
+load input cycles : 456
+process_conv cycles : 700
+write result cycles : 113
+
+Global cycles : 84621
+======================================== input loop ========================================= 1/63
+load input cycles : 214
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 85840
+======================================== input loop ========================================= 2/63
+load input cycles : 217
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 87062
+======================================== input loop ========================================= 3/63
+load input cycles : 192
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 88259
+======================================== input loop ========================================= 4/63
+load input cycles : 169
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 89433
+======================================== input loop ========================================= 5/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 90613
+======================================== input loop ========================================= 6/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 91793
+======================================== input loop ========================================= 7/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 92965
+======================================== input loop ========================================= 8/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 94145
+======================================== input loop ========================================= 9/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 95317
+======================================== input loop ========================================= 10/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 96497
+======================================== input loop ========================================= 11/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 97669
+======================================== input loop ========================================= 12/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 98849
+======================================== input loop ========================================= 13/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 100021
+======================================== input loop ========================================= 14/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 101201
+======================================== input loop ========================================= 15/63
+load input cycles : 746
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 102952
+======================================== input loop ========================================= 16/63
+load input cycles : 201
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 104158
+======================================== input loop ========================================= 17/63
+load input cycles : 223
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 105386
+======================================== input loop ========================================= 18/63
+load input cycles : 214
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 106605
+======================================== input loop ========================================= 19/63
+load input cycles : 217
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 107827
+======================================== input loop ========================================= 20/63
+load input cycles : 192
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 109024
+======================================== input loop ========================================= 21/63
+load input cycles : 169
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 110198
+======================================== input loop ========================================= 22/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 111378
+======================================== input loop ========================================= 23/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 112558
+======================================== input loop ========================================= 24/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 113730
+======================================== input loop ========================================= 25/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 114910
+======================================== input loop ========================================= 26/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 116082
+======================================== input loop ========================================= 27/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 117262
+======================================== input loop ========================================= 28/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 118434
+======================================== input loop ========================================= 29/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 119614
+======================================== input loop ========================================= 30/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 120786
+======================================== input loop ========================================= 31/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 121966
+======================================== input loop ========================================= 32/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 123138
+======================================== input loop ========================================= 33/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 124318
+======================================== input loop ========================================= 34/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 125490
+======================================== input loop ========================================= 35/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 126670
+======================================== input loop ========================================= 36/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 127842
+======================================== input loop ========================================= 37/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 129022
+======================================== input loop ========================================= 38/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 130194
+======================================== input loop ========================================= 39/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 131374
+======================================== input loop ========================================= 40/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 132546
+======================================== input loop ========================================= 41/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 133726
+======================================== input loop ========================================= 42/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 134898
+======================================== input loop ========================================= 43/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 136078
+======================================== input loop ========================================= 44/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 137250
+======================================== input loop ========================================= 45/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 138430
+======================================== input loop ========================================= 46/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 139602
+======================================== input loop ========================================= 47/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 140782
+======================================== input loop ========================================= 48/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 141954
+======================================== input loop ========================================= 49/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 143134
+======================================== input loop ========================================= 50/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 144306
+======================================== input loop ========================================= 51/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 145486
+======================================== input loop ========================================= 52/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 146658
+======================================== input loop ========================================= 53/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 147838
+======================================== input loop ========================================= 54/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 149010
+======================================== input loop ========================================= 55/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 150190
+======================================== input loop ========================================= 56/63
+load input cycles : 811
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 152006
+======================================== input loop ========================================= 57/63
+load input cycles : 168
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 153179
+======================================== input loop ========================================= 58/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 154359
+======================================== input loop ========================================= 59/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 155539
+======================================== input loop ========================================= 60/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 156719
+======================================== input loop ========================================= 61/63
+load input cycles : 167
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 157891
+======================================== input loop ========================================= 62/63
+load input cycles : 175
+process_conv cycles : 892
+write result cycles : 113
+
+Global cycles : 159071
+======================================== input loop ========================================= 63/63
+load input cycles : 167
+process_conv cycles : 700
+write result cycles : 113
+
+Global cycles : 160051
+current cycles : 160051
+[1;32mOVER Test passed correctly[0m
+

@@ -14,6 +14,20 @@ DataPackage::DataPackage(size_t size_package, data_t data, operand_t data_type, 
     this->traffic_type = UNICAST; //Default
 }
 
+// -------------------------------------------------------- add
+DataPackage::DataPackage(std::vector<bool> data, int channel_num, int retrieve_num){
+    this->data_vector = data;
+    this->channel_num = channel_num;
+    this->retrieve_num = retrieve_num;
+}
+DataPackage::DataPackage(bool data, int channel_num, int retrieve_num, int location){
+    this->data_result = data;
+    this->channel_num = channel_num;
+    this->retrieve_num = retrieve_num;
+    this->location = location;
+}
+// -------------------------------------------------------- add
+
 DataPackage::DataPackage(size_t size_package, data_t data, operand_t data_type, id_t source,traffic_t traffic_type) : DataPackage(size_package, data, data_type, source) {
     this->traffic_type = traffic_type;
     this->dests = NULL;

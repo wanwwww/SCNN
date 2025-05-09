@@ -15,21 +15,21 @@
 #include "MultiplierNetwork.h"
 #include "ReduceNetwork.h"
 
-#include "PoolingNetwork.h"
 
 // #include "NeuronStateUpdater.h"
 
 class NeuronStateUpdater; // 前向声明
 
 class OSMeshSDMemory : public MemoryController {
+
 private:
+
     DNNLayer* dnn_layer; // Layer loaded in the accelerator
     ReduceNetwork* reduce_network; //Reduce network used to be reconfigured
     MultiplierNetwork* multiplier_network; //Multiplier network used to be reconfigured
 
     //add
     NeuronStateUpdater* update_network; // 膜电位更新网络
-    PoolingNetwork* pooling_network;
     bool pooling_enabled; // 池化使能信号 
 
     bool print_flag;
@@ -147,6 +147,8 @@ public:
     // add 
     OSMeshControllerState getCurrentState();
     std::map<int, Connection*> getReadConnections() {return this->read_connections;}
+    
+    void reset();
 
     void setSparseMatrixMetadata(metadata_address_t MK_metadata_id, metadata_address_t MK_metadata_pointer) {assert(false);} // Supported by this controller
     void setDenseSpatialData(unsigned int T_N, unsigned int T_K) {assert(false);}
@@ -157,7 +159,6 @@ public:
 
     // add
     void setUpdateNetwork(NeuronStateUpdater* update_network) {this->update_network = update_network; }
-    void setPoolingNetwork(PoolingNetwork* pooling_network) {this->pooling_network = pooling_network; }
 
     void printStats(std::ofstream& out, unsigned int indent);
     void printEnergy(std::ofstream& out, unsigned int indent);
