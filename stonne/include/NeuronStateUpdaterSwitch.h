@@ -13,6 +13,8 @@
 
 class NeuronStateUpdaterSwitch : public Unit {
 private:
+
+    Config stonne_cfg;
     Connection* inputconnection;
     Connection* outputconnection;
 
@@ -44,7 +46,7 @@ public:
 
     void setMemController(OSMeshSDMemory* mem);
 
-    unsigned int computeAddress(DataPackage* pck_received, OSMeshSDMemory* mem);
+    unsigned int computeAddress(std::shared_ptr<DataPackage> pck_received, OSMeshSDMemory* mem);
     
     void receive();
     void compute();

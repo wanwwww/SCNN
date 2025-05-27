@@ -50,7 +50,7 @@ void PoolingMemory::setLayer(int Y_, int channels, address_t input_data, address
 void PoolingMemory::receive(){
     for(int i=0; i<write_connection.size(); i++){
         if(write_connection[i]->existPendingData()){
-            DataPackage* data_received = write_connection[i]->receive_pooling_result();
+            std::shared_ptr<DataPackage> data_received = write_connection[i]->receive_pooling_result();
             write_fifos[i]->push(data_received);
         }
     }
@@ -58,9 +58,9 @@ void PoolingMemory::receive(){
 
 // 将从SRAM中取出的数据发送到池化模块
 void PoolingMemory::send() {
-    std::vector<DataPackage*> pck_to_send; 
+    std::vector<std::shared_ptr<DataPackage>> pck_to_send; 
     if(!this->input_fifo->isEmpty()) {
-        DataPackage* pck = input_fifo->pop();
+        std::shared_ptr<DataPackage> pck = input_fifo->pop();
         pck_to_send.push_back(pck);
         this->read_connection->send(pck_to_send);
     }
@@ -105,7 +105,7 @@ void PoolingMemory::cycle() {
 
         // std::cout<<std::endl;
 
-        DataPackage* pck_to_send = new DataPackage(data, this->current_num_channels, this->current_num_retrieve);
+        std::shared_ptr<DataPackage> pck_to_send = std::make_shared<DataPackage>(data, this->current_num_channels, this->current_num_retrieve);
         this->input_fifo->push(pck_to_send);
 
         // 计数器计算
@@ -132,7 +132,7 @@ void PoolingMemory::cycle() {
     for(int i=0; i<this->num_unit; i++){
         if(!write_fifos[i]->isEmpty()){  // 将池化结果
             // DataPackage(bool data, int channel_num, int retrieve_num, int location);
-            DataPackage* pck_received = write_fifos[i]->pop();
+            std::shared_ptr<DataPackage> pck_received = write_fifos[i]->pop();
             bool data = pck_received->data_result;
             int channel_num = pck_received->channel_num;
             int retrieve_num = pck_received->retrieve_num;

@@ -3,8 +3,8 @@
 
 NeuronStateUpdaterSwitch::NeuronStateUpdaterSwitch(id_t id, std::string name, Config stonne_cfg, unsigned int n_updater, Connection* inputconnection) : Unit(id, name){
     
+    this->stonne_cfg = stonne_cfg;
     this->port_width = stonne_cfg.m_MSwitchCfg.port_width;
-
     this->inputconnection = inputconnection;
     this->n_updater = n_updater;
     this->V_th = stonne_cfg.V_th;
@@ -42,9 +42,10 @@ void NeuronStateUpdaterSwitch::setMemController(OSMeshSDMemory* mem){
     this->mem = mem;
 }
 
-unsigned int NeuronStateUpdaterSwitch::computeAddress(DataPackage* pck_received, OSMeshSDMemory* mem){
+unsigned int NeuronStateUpdaterSwitch::computeAddress(std::shared_ptr<DataPackage> pck_received, OSMeshSDMemory* mem){
     unsigned int vn = pck_received->get_vn();
-    unsigned int current_tile_M_pointer = (mem->getN_iterations_completed() / mem->getIter_N()) * mem->getT_M();
+    // unsigned int current_tile_M_pointer = (mem->getN_iterations_completed() / mem->getIter_N()) * mem->getT_M();
+    unsigned int current_tile_M_pointer = (mem->getN_iterations_completed() / mem->getIter_N()) * this->stonne_cfg.m_MSNetworkCfg.ms_rows;
     unsigned int current_tile_N_pointer = (mem->getN_iterations_completed() % mem->getIter_N()) * mem->getT_N();
     unsigned int vn_M_pointer = vn / mem->getCols_used();
     unsigned int vn_N_pointer = vn % mem->getCols_used();
@@ -54,7 +55,7 @@ unsigned int NeuronStateUpdaterSwitch::computeAddress(DataPackage* pck_received,
 
 void NeuronStateUpdaterSwitch::receive(){
     if(this->inputconnection->existPendingData()){
-        std::vector<DataPackage*> data_received = this->inputconnection->receive();
+        std::vector<std::shared_ptr<DataPackage>> data_received = this->inputconnection->receive();
         for(int i=0;i<data_received.size();i++){
             input_fifo->push(data_received[i]);
         }
@@ -63,8 +64,9 @@ void NeuronStateUpdaterSwitch::receive(){
 
 // 更新膜电位，并将结果推入到输出fifo
 void NeuronStateUpdaterSwitch::compute(){
-    DataPackage* pck_received;
+    std::shared_ptr<DataPackage> pck_received;
     if(!input_fifo->isEmpty()){
+
         pck_received = input_fifo->pop();
         unsigned int addr = computeAddress(pck_received,this->mem);
         data_t Vth_Increment =  pck_received->get_data();  // 膜电位增量 
@@ -88,8 +90,8 @@ void NeuronStateUpdaterSwitch::compute(){
             result_S = 0;
         }
 
-        DataPackage* result_Vth = new DataPackage(sizeof(data_t), result_V, VTH, 0, pck_received->get_vn(), this->operation_mode);
-        DataPackage* result_Spike = new DataPackage(sizeof(data_t), result_S, SPIKE, 0, pck_received->get_vn(), this->operation_mode);
+        std::shared_ptr<DataPackage> result_Vth = std::make_shared<DataPackage>(sizeof(data_t), result_V, VTH, 0, pck_received->get_vn(), this->operation_mode);
+        std::shared_ptr<DataPackage> result_Spike = std::make_shared<DataPackage>(sizeof(data_t), result_S, SPIKE, 0, pck_received->get_vn(), this->operation_mode);
 
         
         this->output_fifo->push(result_Vth);
@@ -106,8 +108,17 @@ void NeuronStateUpdaterSwitch::compute(){
             //std::cout<<"Push a result into the output_fifo (without pooling)"<<std::endl;
         }
 
-        delete pck_received;  // 释放从归约网络接收到的数据
-        
+        // if(this->n_updater == 0){
+        //     std::cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<std::endl;
+        //     std::cout<<"the first updater, receive data is : "<<Vth_Increment<<std::endl;
+        //     std::cout<<"the result output is : "<<result_S<<std::endl;
+        //     std::cout<<"the result neuron state is : "<<result_V<<std::endl;
+        //     std::cout<<"the Vth_pre is : "<<Vth_pre<<std::endl;
+        //     std::cout<<"the Vth_pre addr is : "<<addr<<std::endl;
+        // }
+
+        // delete pck_received;  // 释放从归约网络接收到的数据 ?????????????????????????????????
+        // pck_received = nullptr;
     }
 
 }
@@ -117,9 +128,9 @@ void NeuronStateUpdaterSwitch::compute(){
 //  脉冲数据被推入output_pool_fifo中，然后由send()方法发送到输出连接（与池化模块的连接） 
 void NeuronStateUpdaterSwitch::send(){
     if(!output_fifo->isEmpty()){
-        std::vector<DataPackage*> vector_to_send_mem;
+        std::vector<std::shared_ptr<DataPackage>> vector_to_send_mem;
         while(!output_fifo->isEmpty()){
-            DataPackage* pck = output_fifo->pop();
+            std::shared_ptr<DataPackage> pck = output_fifo->pop();
             vector_to_send_mem.push_back(pck);
         }
 
@@ -129,9 +140,9 @@ void NeuronStateUpdaterSwitch::send(){
     }
 
     if(!output_pool_fifo->isEmpty()){
-        std::vector<DataPackage*> vector_to_send_pool;
+        std::vector<std::shared_ptr<DataPackage>> vector_to_send_pool;
         while(!output_pool_fifo->isEmpty()){
-            DataPackage* pck = output_pool_fifo->pop();
+            std::shared_ptr<DataPackage> pck = output_pool_fifo->pop();
             vector_to_send_pool.push_back(pck);
         }
 

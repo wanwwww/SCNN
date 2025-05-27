@@ -1,0 +1,78 @@
+Call runFC_1 function !!!
+
+[1;33mStart simulation layer : [0m1 fc
+=============================================== weight loop ===================================================== 0/7
+load the input need cycles : 98
+load the weight need cycles : 3264
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 421
+n_cycles_write_result : 4
+=============================================== weight loop ===================================================== 1/7
+load the input need cycles : 120
+load the weight need cycles : 3872
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 421
+n_cycles_write_result : 4
+=============================================== weight loop ===================================================== 2/7
+load the input need cycles : 120
+load the weight need cycles : 3264
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 421
+n_cycles_write_result : 4
+=============================================== weight loop ===================================================== 3/7
+load the input need cycles : 120
+load the weight need cycles : 3264
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 421
+n_cycles_write_result : 4
+=============================================== weight loop ===================================================== 4/7
+load the input need cycles : 120
+load the weight need cycles : 3264
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 421
+n_cycles_write_result : 4
+=============================================== weight loop ===================================================== 5/7
+load the input need cycles : 120
+load the weight need cycles : 3872
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 421
+n_cycles_write_result : 4
+=============================================== weight loop ===================================================== 6/7
+load the input need cycles : 120
+load the weight need cycles : 3264
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 421
+n_cycles_write_result : 4
+=============================================== weight loop ===================================================== 7/7
+load the input need cycles : 348
+load the weight need cycles : 1664
+output[0] : 1
+neuron_state[0] : 0
+[1;32mTest passed correctly [0m
+
+process_fc need cycles : 413
+n_cycles_write_result : 3
+current cycles : 30285
+[1;32mOVER Test passed correctly[0m
+

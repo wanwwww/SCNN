@@ -9,19 +9,19 @@
 #include <cstdlib>
 #include <filesystem>
 
+
 #include "Controller.h"
 #include "MYPOOL.h"
 
 
 // 函数声明
 std::vector<layer_topology> readCSV_layers(std::string& filename); // 读取网络层参数
+std::string get_model_name(const std::string& filepath);
 
 int main(int argc, char *argv[]) {
 
     std::string layer_topology_path;
     std::string hardware_cfg_path;
-
-    std::vector<layer_topology> layers;
     //hardware_cfg h_cfg;
 
     // 从命令行读取的参数
@@ -42,7 +42,84 @@ int main(int argc, char *argv[]) {
         }
     }
 
+     // 例化config，加载硬件参数
+    Config stonne_cfg;
+    stonne_cfg.loadFile(hardware_cfg_path);
+    stonne_cfg.max_weight = (1 << (stonne_cfg.weight_width-1))-1;
+    stonne_cfg.min_weight = -(1 << (stonne_cfg.weight_width-1));
+
+    // 网络拓扑结构
+    std::vector<layer_topology> layers;
     layers = readCSV_layers(layer_topology_path);
+
+    // 根据网络拓扑，确定DRAM中各类数据存储的起始地址，DRAM中存储各层数据时，采用固定位置的方法
+    // DRAM中各层数据存储顺序：输入、权重、输出、膜电位
+    // 遍历每一层参数，计算各类数据所需的存储空间
+
+    int input_max_in_byte = 0;
+    int weight_max_in_byte = 0;
+    int output_max_in_byte = 0;
+
+    int input_num_in_byte = 0; 
+    int output_num_in_byte = 0;
+    int weight_num_in_byte = 0; 
+
+
+    for(int i=0; i<layers.size(); i++){
+        if(layers[i].type == "fc"){  // 全连接层
+            int input_neuron = layers[i].input_neuron;  
+            int output_neuron = layers[i].output_neuron;  
+            
+            input_num_in_byte = static_cast<int>(std::ceil(input_neuron / (float)8));  // 向上取整
+            output_num_in_byte = static_cast<int>(std::ceil(output_neuron / (float)8));
+            weight_num_in_byte = static_cast<int>(std::ceil(input_neuron*output_neuron*stonne_cfg.weight_width / (float)8)); 
+
+        } else {  // 卷积层
+            int R = layers[i].R;
+            int S = layers[i].S;
+            int C = layers[i].C;
+            int K = layers[i].K;
+            int X = layers[i].X;
+            int Y = layers[i].Y;
+            int P = layers[i].P;
+            int stride = layers[i].stride;
+            
+            int X_ = (X + 2*P - R)/stride + 1;
+            int Y_ = (Y + 2*P - S)/stride + 1;
+
+            if(layers[i].type == "conv_pooling"){  // 卷积层后跟池化
+                X_ = X_/2;
+                Y_ = Y_/2;
+            } 
+
+            input_num_in_byte = static_cast<int>(std::ceil(X*Y*C / (float)8));
+            output_num_in_byte = static_cast<int>(std::ceil(X_*Y_*K / (float)8));
+            weight_num_in_byte = static_cast<int>(std::ceil(K*R*S*C*stonne_cfg.weight_width / (float)8));
+        }
+
+        if(input_num_in_byte >= input_max_in_byte){
+            input_max_in_byte = input_num_in_byte;
+        }
+
+        if(output_num_in_byte >= output_max_in_byte){
+            output_max_in_byte = output_num_in_byte;
+        }
+
+        if(weight_num_in_byte >= weight_max_in_byte){
+            weight_max_in_byte = weight_num_in_byte;
+        }
+    }
+
+    // 设置DRAM参数
+    stonne_cfg.m_DRAMCfg.input_offset = 0;
+    stonne_cfg.m_DRAMCfg.weight_offset = input_max_in_byte;
+    stonne_cfg.m_DRAMCfg.output_offset = input_max_in_byte + weight_max_in_byte;
+    stonne_cfg.m_DRAMCfg.neuron_state_offset = input_max_in_byte + weight_max_in_byte + output_max_in_byte;
+    // std::cout<<"input_offset : "<<stonne_cfg.m_DRAMCfg.input_offset<<std::endl;
+    // std::cout<<"weight_offset : "<<stonne_cfg.m_DRAMCfg.weight_offset<<std::endl;
+    // std::cout<<"output_offset : "<<stonne_cfg.m_DRAMCfg.output_offset<<std::endl;
+    // std::cout<<"neuron_state_offset : "<<stonne_cfg.m_DRAMCfg.neuron_state_offset<<std::endl;
+
     // h_cfg = readCSV_cfg(hardware_cfg_path);
     // std::cout<<" the layers topo "<<std::endl;
     // for(int i=0;i<layers.size();i++){
@@ -63,69 +140,72 @@ int main(int argc, char *argv[]) {
     //     std::cout<<std::endl;
     // }
 
-
     int* ifmap;
     int* filter;
     int* ofmap;
     int* nfmap;
-
-    // 例化config，加载硬件参数
-    Config stonne_cfg;
-    stonne_cfg.loadFile(hardware_cfg_path);
 
     // 实例化控制器
     Controller* control = new Controller(stonne_cfg, layers);
     //std::tie(ifmap, filter, ofmap, nfmap) = control->runConvandPooling_DataFlow(1,ifmap,filter,ofmap,nfmap,layers[0]);
     //control->run();
 
-    for(int i=0; i<layers.size(); i=i+2){
-        int layer_id = i+1;
-        // 奇数层的输入在ifmap，输出存储在ofmap
-        if(layers[i].type == "conv_pooling") {
-            std::tie(ifmap, filter, ofmap, nfmap) = control->runConvandPooling_DataFlow(layer_id, ifmap, filter, ofmap, nfmap, layers[i]);
-            delete[] ifmap;
-            delete[] filter;
-            delete[] nfmap;
-        } else if(layers[i].type == "conv") {
-            std::tie(ifmap, filter, ofmap, nfmap) = control->runConv_DataFlow_2(layer_id, ifmap, filter, ofmap, nfmap, layers[i]);
-            delete[] ifmap;
-            delete[] filter;
-            delete[] nfmap;
-        } else if(layers[i].type == "fc") {
-            std::tie(ifmap, filter, ofmap, nfmap) = control->runFC(layer_id, ifmap, filter, ofmap, nfmap, layers[i]);
-            delete[] ifmap;
-            delete[] filter;
-            delete[] nfmap;
-        } else {
-            std::cout<<"\033[1;31m"<<"Unsupported layer types !"<<"\033[0m"<<std::endl;
-        }
+    //std::cout<<"begin cycles : "<<control->n_cycles<<std::endl;
 
-        // 偶数层的输入为上一层的输出
-        if((i+1)<layers.size()){
-            layer_id++;
-            if(layers[i+1].type == "conv_pooling") {
-                std::tie(ifmap, filter, ofmap, nfmap) = control->runConvandPooling_DataFlow(layer_id, ofmap, filter, ifmap, nfmap, layers[i+1]);
-                // delete[] ifmap;
+    for(int i=0; i<layers.size(); i++){
+
+        int layer_id = i+1;
+
+        if(i==0){  // 对于第一层，输入是输入，输出是输出
+            if(layers[i].type == "conv_pooling") {
+                std::tie(ifmap, filter, ofmap, nfmap) = control->runConvandPooling_DataFlow_2(layer_id, ifmap, filter, ofmap, nfmap, layers[i]);
+                delete[] ifmap;
                 delete[] filter;
                 delete[] nfmap;
-                delete[] ofmap;
             } else if(layers[i].type == "conv") {
-                std::tie(ifmap, filter, ofmap, nfmap) = control->runConv_DataFlow_1(layer_id, ofmap, filter, ofmap, nfmap, layers[i+1]);
-                delete[] ofmap;
+                std::tie(ifmap, filter, ofmap, nfmap) = control->runConv_DataFlow_3(layer_id, ifmap, filter, ofmap, nfmap, layers[i]);
+                delete[] ifmap;
                 delete[] filter;
                 delete[] nfmap;
             } else if(layers[i].type == "fc") {
-                std::tie(ifmap, filter, ofmap, nfmap) = control->runFC(layer_id, ofmap, filter, ifmap, nfmap, layers[i+1]);
-                delete[] ofmap;
+                std::tie(ifmap, filter, ofmap, nfmap) = control->runFC_2(layer_id, ifmap, filter, ofmap, nfmap, layers[i]);
+                delete[] ifmap;
                 delete[] filter;
                 delete[] nfmap;
             } else {
                 std::cout<<"\033[1;31m"<<"Unsupported layer types !"<<"\033[0m"<<std::endl;
+                assert(false);
             }
-        } else {
-            delete[] ofmap;
+        } else {  // 对于后面的层，输入是上一层的输出
+            if(layers[i].type == "conv_pooling") {
+                std::tie(ifmap, filter, ofmap, nfmap) = control->runConvandPooling_DataFlow_2(layer_id, ofmap, filter, ifmap, nfmap, layers[i]);
+                delete[] ifmap;
+                delete[] filter;
+                delete[] nfmap;
+            } else if(layers[i].type == "conv") {
+                std::tie(ifmap, filter, ofmap, nfmap) = control->runConv_DataFlow_3(layer_id, ofmap, filter, ifmap, nfmap, layers[i]);
+                delete[] ifmap;
+                delete[] filter;
+                delete[] nfmap;
+            } else if(layers[i].type == "fc") {
+                std::tie(ifmap, filter, ofmap, nfmap) = control->runFC_2(layer_id, ofmap, filter, ifmap, nfmap, layers[i]);
+                delete[] ifmap;
+                delete[] filter;
+                delete[] nfmap;
+            } else {
+                std::cout<<"\033[1;31m"<<"Unsupported layer types !"<<"\033[0m"<<std::endl;
+                assert(false);
+            }
         }
     }
+
+    std::string model_name = get_model_name(layer_topology_path);
+
+    std::cout<<std::endl;
+    std::cout<<"****************************************************************************************************************"<<std::endl;
+    std::cout<<"      The "<<model_name<<" simulation ends, and the total number of running cycles is: "<<control->n_cycles<<std::endl;
+    std::cout<<"****************************************************************************************************************"<<std::endl;
+    std::cout<<std::endl;
     
     delete control;
 
@@ -194,6 +274,12 @@ int main(int argc, char *argv[]) {
     //     }
     // }
 
+}
+
+std::string get_model_name(const std::string& filepath) {
+    std::filesystem::path p(filepath);
+    std::string filename = p.stem().string();  // 去除扩展名后的文件名
+    return filename;
 }
 
 // 读取csv文件函数

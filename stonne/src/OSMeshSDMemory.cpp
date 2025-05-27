@@ -139,21 +139,21 @@ void OSMeshSDMemory::setTile(Tile* current_tile)
 // 负责管理数据的发送和接收以及状态转换 
 
 void OSMeshSDMemory::cycle() {
-    //std::cout<<"Calling the memory controller "<<std::endl;
+    // std::cout<<"Calling the memory controller "<<std::endl;
 
     //Sending input data over read_connection
     assert(this->layer_loaded);  // Layer has been loaded
     
     // data_to_send 临时存储要发送的输入和权重数据 
-    std::vector<DataPackage*> data_to_send; //Input and weight temporal storage
-    //std::vector<DataPackage*> psum_to_send; // psum temporal storage
+    std::vector<std::shared_ptr<DataPackage>> data_to_send; //Input and weight temporal storage
+    //std::vector<std::shared_ptr<DataPackage>> psum_to_send; // psum temporal storage
     this->local_cycle+=1;
     this->sdmemoryStats.total_cycles++; //To track information
 
     // 配置状态 
     if(current_state==OS_CONFIGURING) 
     {	//Initialize these for the first time
-        //std::cout<<"Calling the memory controller and the cycle is "<<this->local_cycle<<std::endl;
+        // std::cout<<"Calling the memory controller and the cycle is "<<this->local_cycle<<std::endl;
         this->sdmemoryStats.n_reconfigurations++;
         //std::cout<<"this->sdmemoryStats.n_reconfigurations(OSMeshSDMemory.cpp) : "<<this->sdmemoryStats.n_reconfigurations<<std::endl;
         unsigned int remaining_M = M - (current_M*T_M);
@@ -165,12 +165,15 @@ void OSMeshSDMemory::cycle() {
         // Tile(unsigned int T_R, unsigned int T_S, unsigned int T_C, unsigned int T_K, unsigned int T_G,  unsigned int T_N, unsigned int T_X_, unsigned int T_Y_, bool folding);
         Tile* tile1 = new Tile(1, 1, 1, cols_used, 1, 1, rows_used, 1, false); 
         this->multiplier_network->resetSignals(); // 将MN中每个MS的forward_right、forward_bottom设置为false，VN设置为0
+        //std::cout<<"2"<<std::endl;
         this->reduce_network->resetSignals();  // 将AN中每个AS的current_psum、n_psums设置为0，operation_mode设置为ADDER
+        //std::cout<<"3"<<std::endl;
         // 配置MN的信号，也就是配置所使用的PE当中MS的向下向右转发使能、VN编号 
         this->multiplier_network->configureSignals(tile1, this->dnn_layer, this->ms_rows, this->ms_cols);
+        //std::cout<<"4"<<std::endl;
         // 配置AN，也就是配置AN中每个AS需要进行累加部分和的次数为iter_k，即配置AS的变量n_psums为iter_k
         this->reduce_network->configureSignals(tile1, this->dnn_layer, this->ms_rows*this->ms_cols, this->iter_K);
-        //std::cout<<"2"<<std::endl;
+        //std::cout<<"5"<<std::endl;
 
         iteration_completed=false;
         //std::cout<<"config complete"<<std::endl;
@@ -195,6 +198,8 @@ void OSMeshSDMemory::cycle() {
             this->one_PE_requierd_output = 2*this->rows_used*this->cols_used;
             //std::cout<<"all_timestamp_required_output ： "<<this->all_timestamp_required_output<<std::endl;
         }
+
+        //std::cout<<"debug"<<std::endl;
     }
     
     //std::cout<<"debug 1"<<std::endl;
@@ -220,7 +225,7 @@ void OSMeshSDMemory::cycle() {
             //std::cout<<std::endl;
             sdmemoryStats.n_SRAM_weight_reads++;  
             // (size_t size_package, data_t data, operand_t data_type, id_t source,traffic_t traffic_type, unsigned int unicast_dest) : 
-            DataPackage* pck_to_send = new DataPackage(sizeof(data_t), data, WEIGHT, 0, UNICAST, i);
+            std::shared_ptr<DataPackage> pck_to_send = std::make_shared<DataPackage>(sizeof(data_t), data, WEIGHT, 0, UNICAST, i);
             //std::cout<<"old data : "<<pck_to_send->getIterationK()<<std::endl;
             this->sendPackageToInputFifos(pck_to_send);  // 将取出的数据发送到内存相应读端口的fifo中
         }
@@ -231,11 +236,11 @@ void OSMeshSDMemory::cycle() {
             data_t data;//Accessing to memory
             int index_M=current_M*T_M;  // 注意input数据读取的地址
             data = this->MK_address[current_Timestamp*M*K+(index_M+i)*this->K + this->current_K]; 
-            //td::cout<<"the address of input is : "<<current_Timestamp*M*K+(index_M+i)*this->K + this->current_K<<std::endl;
+            //std::cout<<"the address of input is : "<<current_Timestamp*M*K+(index_M+i)*this->K + this->current_K<<std::endl;
             //std::cout<<"The input taken out is : "<<data<<std::endl;
             //std::cout<<std::endl;
             sdmemoryStats.n_SRAM_input_reads++;  
-            DataPackage* pck_to_send = new DataPackage(sizeof(data_t), data, IACTIVATION, 0, UNICAST, i+this->ms_cols);
+            std::shared_ptr<DataPackage> pck_to_send = std::make_shared<DataPackage>(sizeof(data_t), data, IACTIVATION, 0, UNICAST, i+this->ms_cols);
             this->sendPackageToInputFifos(pck_to_send);
         }
         //std::cout<<std::endl;
@@ -279,7 +284,7 @@ void OSMeshSDMemory::cycle() {
         std::size_t write_fifo_size = write_fifo->size();
         for(int i=0; i<write_fifo_size; i++) {
             //std::cout<<" i : "<<i<<std::endl;
-            DataPackage* pck_received = write_fifo->pop();
+            std::shared_ptr<DataPackage> pck_received = write_fifo->pop();
             unsigned int vn = pck_received->get_vn();
             data_t data = pck_received->get_data();
             this->sdmemoryStats.n_SRAM_psum_writes++; //To track information 
@@ -287,15 +292,17 @@ void OSMeshSDMemory::cycle() {
             // 乘以 T_M，计算当前 M 行块的起始位置（行号）
             // n_iterations_completed % this->iter_N 得到当前迭代属于的N列块索引
             // 乘以 T_N，计算当前 N 列块的起始位置（列号）
-            unsigned int current_tile_M_pointer = (n_iterations_completed /this->iter_N)*this->T_M;  //Change this to change the dataflow
+            //unsigned int current_tile_M_pointer = (n_iterations_completed /this->iter_N)*this->T_M;  //Change this to change the dataflow
+            unsigned int current_tile_M_pointer = (n_iterations_completed /this->iter_N)*this->ms_rows;  //Change this to change the dataflow
             //unsigned int current_tile_N_pointer = (n_iterations_completed % this->iter_N)*T_N;
             unsigned int current_tile_N_pointer = 0;
             // 当前虚拟节点在当前数据块内的行和列位置。
             unsigned int vn_M_pointer = vn / this->cols_used;
             unsigned int vn_N_pointer = vn % this->cols_used;
-            unsigned int timestamp_offset = n_timestamp_completed*M*N; // 已经计算完毕的偏移量 
+            unsigned int timestamp_offset = n_timestamp_completed*M*N; // 已经计算完毕的偏移量 12
             unsigned int timestamp_offset_pooling = n_timestamp_completed*M*N/4 ;  // 带有池化模块的计算完毕的偏移量 
             unsigned int addr_offset = (current_tile_M_pointer+vn_M_pointer)*this->N + current_tile_N_pointer + vn_N_pointer; 
+            //unsigned int addr_offset = (current_tile_M_pointer+vn_M_pointer)*this->N + current_tile_N_pointer + vn_N_pointer; 
             unsigned int addr_pooling = ((current_tile_M_pointer+vn_M_pointer)/2)*this->N/2 + (current_tile_N_pointer + vn_N_pointer)/2;
             vnat_table[vn]++; // 记录每个虚拟节点的访问次数 
 
@@ -304,6 +311,9 @@ void OSMeshSDMemory::cycle() {
             switch (pck_received->get_data_type()){
                 case VTH:
                     this->neuron_state[addr_offset] = data;
+                    // if(addr_offset == 96){
+                    //     std::cout<<"  neuron state is : "<<data<<"======================="<<std::endl;
+                    // }
                     
                     //std::cout<<"the data type is neuron state"<<std::endl;
                     break;
@@ -313,7 +323,10 @@ void OSMeshSDMemory::cycle() {
                         //std::cout<<"-------------------------------------------------- the address of spike with pooling "<<addr_pooling<<std::endl;
                     } else {
                         this->output_address[timestamp_offset+addr_offset] = data;
-                        //std::cout<<"output write addr is : "<<addr_offset<<std::endl;
+                        // std::cout<<"output write addr is : "<<addr_offset<<std::endl;
+                        // if(addr_offset == 96){
+                        //     std::cout<<"write data is : "<<data<<std::endl;
+                        // }
                     }
                     //std::cout<<"the data type is spike"<<std::endl;
                     break;
@@ -367,7 +380,8 @@ void OSMeshSDMemory::cycle() {
             //     n_timestamp_completed++;
             // }
 
-            delete pck_received; //Deleting the current package
+            // delete pck_received; //Deleting the current package ?????????????????????????????????????????????????????????
+            // pck_received = nullptr;
             //std::cout<<"the length of write_fifo (after) : "<<write_fifo->size()<<std::endl;
         }
 
@@ -419,13 +433,13 @@ void OSMeshSDMemory::reset(){
 
 /* The traffic generation algorithm generates a package that contains a destination for all the ms. We have to divide it into smaller groups of ms since they are divided into several ports */
 // 根据发送方式（单播、广播、多播）发送数据包到相应端口的fifo
-void OSMeshSDMemory::sendPackageToInputFifos(DataPackage* pck) {
+void OSMeshSDMemory::sendPackageToInputFifos(std::shared_ptr<DataPackage> pck) {
     // BROADCAST PACKAGE 广播
     if(pck->isBroadcast()) {
         //Send to all the ports with the flag broadcast enabled
         for(int i=0; i<this->n_read_ports; i++) {
             //Creating a replica of the package to be sent to each port
-            DataPackage* pck_new = new DataPackage(pck->get_size_package(), pck->get_data(), pck->get_data_type(), i, BROADCAST); //Size, data, data_type, source (port in this case), BROADCAST
+            std::shared_ptr<DataPackage> pck_new = std::make_shared<DataPackage>(pck->get_size_package(), pck->get_data(), pck->get_data_type(), i, BROADCAST); //Size, data, data_type, source (port in this case), BROADCAST
             //Sending the replica to the suitable fifo that correspond with the port  将副本发送到端口对应的fifo
             if(pck->get_data_type() == PSUM) { //Actually a PSUM cannot be broadcast. But we put this for compatibility
                 psum_fifos[i]->push(pck_new);
@@ -446,7 +460,7 @@ void OSMeshSDMemory::sendPackageToInputFifos(DataPackage* pck) {
         unsigned int input_port = dest / this->ms_size_per_input_port;  // 属于哪个端口
         unsigned int local_dest = dest % this->ms_size_per_input_port;  // 端口对应的第几个乘法器 
         //Creating the package  // 创建数据包的副本 
-        DataPackage* pck_new = new DataPackage(pck->get_size_package(), pck->get_data(), pck->get_data_type(), input_port, UNICAST, local_dest); //size, data, type, source (port), UNICAST, dest_local
+        std::shared_ptr<DataPackage> pck_new = std::make_shared<DataPackage>(pck->get_size_package(), pck->get_data(), pck->get_data_type(), input_port, UNICAST, local_dest); //size, data, type, source (port), UNICAST, dest_local
         //Sending to the fifo corresponding with port input_port
         if(pck->get_data_type() == PSUM) { 
             psum_fifos[input_port]->push(pck_new);
@@ -475,7 +489,7 @@ void OSMeshSDMemory::sendPackageToInputFifos(DataPackage* pck) {
             }
 
             if(thereis_receiver) { //If this port have at least one ms to true then we send the data to this port i
-                DataPackage* pck_new = new DataPackage(pck->get_size_package(), pck->get_data(), pck->get_data_type(), i, MULTICAST, local_dest, this->ms_size_per_input_port); 
+                std::shared_ptr<DataPackage> pck_new = std::make_shared<DataPackage>(pck->get_size_package(), pck->get_data(), pck->get_data_type(), i, MULTICAST, local_dest, this->ms_size_per_input_port); 
                 if(pck->get_data_type() == PSUM) {
                     psum_fifos[i]->push(pck_new);
                 }
@@ -493,7 +507,7 @@ void OSMeshSDMemory::sendPackageToInputFifos(DataPackage* pck) {
     }
 
     // 已经根据所需创建了数据包的副本，所以可以删除掉
-    delete pck; // We have created replicas of the package for the ports needed so we can delete this
+    // delete pck; // We have created replicas of the package for the ports needed so we can delete this
 } 
 
 void OSMeshSDMemory::send() {
@@ -501,10 +515,10 @@ void OSMeshSDMemory::send() {
     // 遍历每个端口，如果其fifo中有数据，就发送。优先考虑部分和
 
     for(int i=0; i<this->n_read_ports; i++) { 
-        std::vector<DataPackage*> pck_to_send; 
+        std::vector<std::shared_ptr<DataPackage>> pck_to_send; 
         
         if(!this->psum_fifos[i]->isEmpty()) { //If there is something we may send data though the connection
-            DataPackage* pck = psum_fifos[i]->pop();
+            std::shared_ptr<DataPackage> pck = psum_fifos[i]->pop();
             #ifdef DEBUG_MEM_INPUT
                 std::cout << "[MEM_INPUT] Cycle " << local_cycle << ", Sending a psum through input port " << i  << std::endl;
             #endif
@@ -516,7 +530,7 @@ void OSMeshSDMemory::send() {
         //If psums fifo is empty then input fifo is checked. If psum is not empty then else do not compute. Important this ELSE to give priority to the psums and do not send more than 1 pck
         else if(!this->input_fifos[i]->isEmpty()) {
             //If the package belongs to a certain k iteration but the previous k-1 iteration has not finished the package is not sent
-            DataPackage* pck = input_fifos[i]->front(); //Front because we are not sure if we have to send it. // 不从fifo中删除 
+            std::shared_ptr<DataPackage> pck = input_fifos[i]->front(); //Front because we are not sure if we have to send it. // 不从fifo中删除 
            
             if(pck->get_data_type()==WEIGHT) {
                 this->sdmemoryStats.n_SRAM_read_ports_weights_use[i]++; //To track information
@@ -546,7 +560,7 @@ void OSMeshSDMemory::receive() { //TODO control if there is no space in queue
     // this->write_connection 是查找表和内存的接口 
     // if(this->write_connection->existPendingData()) {
     //     std::cout<<"debug 4"<<std::endl;
-    //     std::vector<DataPackage*> data_received = write_connection->receive();
+    //     std::vector<std::shared_ptr<DataPackage>> data_received = write_connection->receive();
     //     for(int i=0; i<data_received.size(); i++) {
     //         write_fifo->push(data_received[i]);
     //     }
@@ -557,7 +571,7 @@ void OSMeshSDMemory::receive() { //TODO control if there is no space in queue
         //std::cout<<"debug 5"<<std::endl;
         if(write_port_connections[i]->existPendingData()) {
             //std::cout<<"debug 6"<<std::endl;
-            std::vector<DataPackage*> data_received = write_port_connections[i]->receive();
+            std::vector<std::shared_ptr<DataPackage>> data_received = write_port_connections[i]->receive();
             for(int i=0; i<data_received.size(); i++) {
             //std::cout<<"the length of dataPackage(OSMeshSDMemory.cpp) : "<<data_received.size()<<std::endl;
             write_fifo->push(data_received[i]);

@@ -61,7 +61,7 @@ void DataPackage::setIterationK(unsigned int iteration_k) {
 }
 
 //Copy constructor
-DataPackage::DataPackage(DataPackage* pck) {
+DataPackage::DataPackage(std::shared_ptr<DataPackage> pck) {
     this->size_package = pck->get_size_package();
     this->data = pck->get_data();
     this->data_type = pck->get_data_type();
@@ -87,11 +87,11 @@ DataPackage::DataPackage(DataPackage* pck) {
 
 }
 
-DataPackage::~DataPackage() {
+// DataPackage::~DataPackage() {
   
-    if(this->traffic_type==MULTICAST) {
-        delete[] dests;
-    }
-}
+//     if(this->traffic_type==MULTICAST) {
+//         delete[] dests;
+//     }
+// }
 
 

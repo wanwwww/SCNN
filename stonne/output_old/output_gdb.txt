@@ -1,0 +1,118 @@
+Starting program: /home/zww/SCNN/stonne/stonne ./topo_files/vgg11.csv ./cfg_files/tpu_4_4.cfg
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737348056896) at ./nptl/pthread_kill.c:44
+44	./nptl/pthread_kill.c: No such file or directory.
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737348056896) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737348056896) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737348056896, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7a7a476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff7a607f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff7ac16f6 in __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7ffff7c13b8c "%s\n") at ../sysdeps/posix/libc_fatal.c:155
+#6  0x00007ffff7ad8d7c in malloc_printerr (str=str@entry=0x7ffff7c1172e "corrupted double-linked list") at ./malloc/malloc.c:5664
+#7  0x00007ffff7ad984c in unlink_chunk (p=p@entry=0x555556a85ed0, av=0x7ffff7c51c80 <main_arena>) at ./malloc/malloc.c:1635
+#8  0x00007ffff7adadab in _int_free (av=0x7ffff7c51c80 <main_arena>, p=0x555556a85db0, have_lock=<optimized out>) at ./malloc/malloc.c:4616
+#9  0x00007ffff7add4d3 in __GI___libc_free (mem=<optimized out>) at ./malloc/malloc.c:3391
+#10 0x00005555555c4af3 in Dram::run (this=0x5555567c3710) at src/DRAMModel.cpp:30
+#11 0x000055555556eec6 in Controller::load_input_data_step1_ppbuffer (this=0x55555564fa80, layer_id=5, ifmap=0x5555569c3b90, dram_instance=0x5555567c3710, j=0, layer_parameters=...) at src/Controller.cpp:444
+#12 0x000055555558b0db in Controller::runConv_DataFlow_3 (this=0x55555564fa80, layer_id=5, ifmap=0x5555569c3b90, filter=0x7ffff75b2010, ofmap=0x5555569a0e40, nfmap=0x55555696c2b0, layer_parameters=...) at src/Controller.cpp:4821
+#13 0x00005555555fef51 in main (argc=3, argv=0x7fffffffd908) at src/main.cpp:111
+Breakpoint 1 at 0x5555555c4ad5: file src/DRAMModel.cpp, line 30.
+Hardware watchpoint 2: *(void**)0x555556a85db0
+Starting program: /home/zww/SCNN/stonne/stonne ./topo_files/vgg11.csv ./cfg_files/tpu_4_4.cfg
+
+Breakpoint 1, Dram::run (this=0x555555653770) at src/DRAMModel.cpp:30
+30	                delete read_request;
+#0  Dram::run (this=0x555555653770) at src/DRAMModel.cpp:30
+#1  0x000055555556ddaf in Controller::load_weight_data_ppbuffer (this=0x55555564fa80, filter=0x5555556570e0, dram_instance=0x555555653770, num_weight_obtained=0, num_weight_data=432) at src/Controller.cpp:217
+#2  0x00005555555920bf in Controller::runConvandPooling_DataFlow_2 (this=0x55555564fa80, layer_id=1, ifmap=0x5555556540d0, filter=0x5555556570e0, ofmap=0x555555658bf0, nfmap=0x7ffff79f2010, layer_parameters=...) at src/Controller.cpp:5930
+#3  0x00005555555fe9a4 in main (argc=3, argv=0x7fffffffd908) at src/main.cpp:86
+25	        assert(!write); // 这里是读请求
+26	        if(this->dram->WillAcceptTransaction(addr,write)){
+27	            if(this->dram->AddTransaction(addr,write)){
+28	                //std::cout << "Added read transaction at address: 0x" << std::hex << addr <<std::endl;
+29	                this->read_request_fifo->pop(); // 读请求发送给dram之后，将该请求移除
+30	                delete read_request;
+31	                read_request = nullptr;
+32	            } else{
+33	                //std::cout << "Failed to add read transaction!!!" <<std::endl;
+34	            }
+$1 = {dram = 0x5555556539b0, read_request_fifo = 0x555555650140, write_request_fifo = 0x5555556503d0}
+Breakpoint 3 at 0x7ffff7ac1300: __libc_message. (2 locations)
+Starting program: /home/zww/SCNN/stonne/stonne ./topo_files/vgg11.csv ./cfg_files/tpu_4_4.cfg
+
+Breakpoint 1, Dram::run (this=0x555555653770) at src/DRAMModel.cpp:30
+30	                delete read_request;
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00005555555c4ad5 in Dram::run() at src/DRAMModel.cpp:30
+	breakpoint already hit 1 time
+2       hw watchpoint  keep y                      *(void**)0x555556a85db0
+3       breakpoint     keep y   <MULTIPLE>         
+3.1                         y   0x00007ffff7ac1300 in __libc_message at ../sysdeps/posix/libc_fatal.c:57
+3.2                         y   0x00007ffff7ac1460 in __libc_message at ../sysdeps/posix/libc_fatal.c:58
+Breakpoint 4 at 0x7ffff7ac1300: __libc_message. (2 locations)
+Num     Type           Disp Enb Address            What
+4       breakpoint     keep y   <MULTIPLE>         
+4.1                         y   0x00007ffff7ac1300 in __libc_message at ../sysdeps/posix/libc_fatal.c:57
+4.2                         y   0x00007ffff7ac1460 in __libc_message at ../sysdeps/posix/libc_fatal.c:58
+Starting program: /home/zww/SCNN/stonne/stonne ./topo_files/vgg11.csv ./cfg_files/tpu_4_4.cfg
+
+Breakpoint 4, __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7ffff7c13b8c "%s\n") at ../sysdeps/posix/libc_fatal.c:58
+58	../sysdeps/posix/libc_fatal.c: No such file or directory.
+#0  __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7ffff7c13b8c "%s\n") at ../sysdeps/posix/libc_fatal.c:58
+#1  0x00007ffff7ad8d7c in malloc_printerr (str=str@entry=0x7ffff7c1172e "corrupted double-linked list") at ./malloc/malloc.c:5664
+#2  0x00007ffff7ad984c in unlink_chunk (p=p@entry=0x555556a85ed0, av=0x7ffff7c51c80 <main_arena>) at ./malloc/malloc.c:1635
+#3  0x00007ffff7adadab in _int_free (av=0x7ffff7c51c80 <main_arena>, p=0x555556a85db0, have_lock=<optimized out>) at ./malloc/malloc.c:4616
+#4  0x00007ffff7add4d3 in __GI___libc_free (mem=<optimized out>) at ./malloc/malloc.c:3391
+#5  0x00005555555c4af3 in Dram::run (this=0x5555567c3710) at src/DRAMModel.cpp:30
+#6  0x000055555556eec6 in Controller::load_input_data_step1_ppbuffer (this=0x55555564fa80, layer_id=5, ifmap=0x5555569c3b90, dram_instance=0x5555567c3710, j=0, layer_parameters=...) at src/Controller.cpp:444
+#7  0x000055555558b0db in Controller::runConv_DataFlow_3 (this=0x55555564fa80, layer_id=5, ifmap=0x5555569c3b90, filter=0x7ffff75b2010, ofmap=0x5555569a0e40, nfmap=0x55555696c2b0, layer_parameters=...)
+    at src/Controller.cpp:4821
+#8  0x00005555555fef51 in main (argc=3, argv=0x7fffffffd908) at src/main.cpp:111
+No symbol "read_request" in current context.
+#5  0x00005555555c4af3 in Dram::run (this=0x5555567c3710) at src/DRAMModel.cpp:30
+30	                delete read_request;
+25	        assert(!write); // 这里是读请求
+26	        if(this->dram->WillAcceptTransaction(addr,write)){
+27	            if(this->dram->AddTransaction(addr,write)){
+28	                //std::cout << "Added read transaction at address: 0x" << std::hex << addr <<std::endl;
+29	                this->read_request_fifo->pop(); // 读请求发送给dram之后，将该请求移除
+30	                delete read_request;
+31	                read_request = nullptr;
+32	            } else{
+33	                //std::cout << "Failed to add read transaction!!!" <<std::endl;
+34	            }
+Breakpoint 5 at 0x7ffff7add460: file ./malloc/malloc.c, line 3352.
+Type commands for breakpoint(s) 5, one per line.
+End with a line saying just "end".
+Continuing.
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737348056896) at ./nptl/pthread_kill.c:44
+44	./nptl/pthread_kill.c: No such file or directory.
+Num     Type           Disp Enb Address            What
+4       breakpoint     keep y   <MULTIPLE>         
+	breakpoint already hit 1 time
+4.1                         y   0x00007ffff7ac1300 in __libc_message at ../sysdeps/posix/libc_fatal.c:57
+4.2                         y   0x00007ffff7ac1460 in __libc_message at ../sysdeps/posix/libc_fatal.c:58
+5       breakpoint     keep y   0x00007ffff7add460 in __GI___libc_free at ./malloc/malloc.c:3352
+        silent
+        bt
+        continue
+Num     Type           Disp Enb Address            What
+4       breakpoint     keep y   <MULTIPLE>         
+	breakpoint already hit 1 time
+4.1                         y   0x00007ffff7ac1300 in __libc_message at ../sysdeps/posix/libc_fatal.c:57
+4.2                         y   0x00007ffff7ac1460 in __libc_message at ../sysdeps/posix/libc_fatal.c:58
+Breakpoint 6 at 0x7ffff7add460: file ./malloc/malloc.c, line 3352.
+Type commands for breakpoint(s) 6, one per line.
+End with a line saying just "end".
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Exception ignored in: <gdb._GdbOutputFile object at 0x7fe42684fa30>
+Traceback (most recent call last):
+  File "/usr/share/gdb/python/gdb/__init__.py", line 43, in flush
+    def flush(self):
+KeyboardInterrupt: 

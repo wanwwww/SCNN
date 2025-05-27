@@ -1,0 +1,428 @@
+Call runConv_DataFlow_2 function !!! 1
+[1;33mStart simulation layer : [0m1 conv
+=============================================== weight loop ===================================================== 0/0
+load weight cycles : 122
+load the first input cycles : 88
+current weight loop begin cycles : 210
+======================================== input loop ========================================= 0/27
+load input cycles : 44
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 499
+======================================== input loop ========================================= 1/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 788
+======================================== input loop ========================================= 2/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 1077
+======================================== input loop ========================================= 3/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 1366
+======================================== input loop ========================================= 4/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 1655
+======================================== input loop ========================================= 5/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 1944
+======================================== input loop ========================================= 6/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 2233
+======================================== input loop ========================================= 7/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 2522
+======================================== input loop ========================================= 8/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 2811
+======================================== input loop ========================================= 9/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 3100
+======================================== input loop ========================================= 10/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 3389
+======================================== input loop ========================================= 11/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 3678
+======================================== input loop ========================================= 12/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 3967
+======================================== input loop ========================================= 13/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 4256
+======================================== input loop ========================================= 14/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 4545
+======================================== input loop ========================================= 15/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 4834
+======================================== input loop ========================================= 16/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 5123
+======================================== input loop ========================================= 17/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 5412
+======================================== input loop ========================================= 18/27
+load input cycles : 955
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 5701
+======================================== input loop ========================================= 19/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 5990
+======================================== input loop ========================================= 20/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 6279
+======================================== input loop ========================================= 21/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 6568
+======================================== input loop ========================================= 22/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 6857
+======================================== input loop ========================================= 23/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 7146
+======================================== input loop ========================================= 24/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 7435
+======================================== input loop ========================================= 25/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 7724
+======================================== input loop ========================================= 26/27
+load input cycles : 315
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 8013
+======================================== input loop ========================================= 27/27
+
+cycles : 151
+[1;32mTest passed correctly[0m
+
+
+cycles : 258
+[1;32mTest passed correctly[0m
+
+process_conv cycles : 264
+write result cycles : 25
+process_conv and write result cycles : 289
+
+Global cycles : 8302
+current cycles : 8302
+[1;32mOVER Test passed correctly[0m
+

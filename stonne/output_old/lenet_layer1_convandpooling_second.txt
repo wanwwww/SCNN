@@ -1,0 +1,709 @@
+Call runConvandPooling_DataFlow_2 function !!! 1
+[1;33mStart simulation layer : [0m1 conv_pooling
+load the first weights cycles : 274
+=============================================== weight loop ===================================================== 0/0
+load the first input cycles : 136
+current weight loop begin cycles : 410
+======================================== input loop ========================================= 0/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 1012
+======================================== input loop ========================================= 1/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 1647
+======================================== input loop ========================================= 2/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 2249
+======================================== input loop ========================================= 3/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 2884
+======================================== input loop ========================================= 4/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 3486
+======================================== input loop ========================================= 5/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 4121
+======================================== input loop ========================================= 6/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 4723
+======================================== input loop ========================================= 7/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 5358
+======================================== input loop ========================================= 8/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 5960
+======================================== input loop ========================================= 9/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 6595
+======================================== input loop ========================================= 10/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 7197
+======================================== input loop ========================================= 11/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 7832
+======================================== input loop ========================================= 12/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 8434
+======================================== input loop ========================================= 13/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 9069
+======================================== input loop ========================================= 14/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 9671
+======================================== input loop ========================================= 15/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 10306
+======================================== input loop ========================================= 16/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 10908
+======================================== input loop ========================================= 17/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 11543
+======================================== input loop ========================================= 18/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 12145
+======================================== input loop ========================================= 19/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 12780
+======================================== input loop ========================================= 20/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 13382
+======================================== input loop ========================================= 21/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 14017
+======================================== input loop ========================================= 22/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 14619
+======================================== input loop ========================================= 23/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 15254
+======================================== input loop ========================================= 24/27
+load next input cycles : 926
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 16180
+======================================== input loop ========================================= 25/27
+load next input cycles : 92
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 16815
+======================================== input loop ========================================= 26/27
+load next input cycles : 366
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 17417
+======================================== input loop ========================================= 27/27
+load next input cycles : 0
+load next weight cycles : 0
+
+************************************************************************
+Sort the input for the first time : 300         local_cycles : 300
+num_tile : 0-------------
+Sort next input_arranged : 180
+compute the tile need cycles : 101
+current local_cycles is : 480
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 97
+current local_cycles is : 577
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 583
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 18052
+current cycles : 18052
+[1;32mOVER Test passed correctly[0m
+

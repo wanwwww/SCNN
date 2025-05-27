@@ -177,6 +177,42 @@ void matrixMultiply(int M, int K, int N, int* input, int* weight, int* output, i
                 output[add_offset + i*N+j] = 0;
                 neuron_state[add_offset + i*N+j] = sum;
             }
+            // if(i==12 && j==0){
+            //     std::cout<<"sum : "<<sum<<std::endl;
+            //     std::cout<<"addr : "<<add_offset + i*N+j<<std::endl;
+            // }
+        }
+    }
+
+}
+
+void matrixMultiply_new(int M, int K, int N, int* input, int* weight, int* output, int* neuron_state, int V_th, int num_tile, int rows){
+    
+    int add_offset = num_tile*rows*N;
+    //std::cout<<"add_offset : "<<add_offset<<std::endl;
+
+    for(int i=0; i<M; i++){
+        for(int j=0; j<N; j++){
+            int sum = 0;
+            for(int k=0; k<K; k++){
+                sum += input[i*K+k] * weight[k+j*K];
+                //std::cout<<"input : "<<input[i*K+k]<<std::endl;
+                //std::cout<<"weight : "<<weight[k + j*K]<<std::endl;
+            }
+            // std::cout<<"sum : "<<sum<<std::endl;
+            if(sum>=V_th){
+                output[add_offset + i*N+j] = 1;
+                neuron_state[add_offset + i*N+j] = 0;
+            }else {
+                output[add_offset + i*N+j] = 0;
+                neuron_state[add_offset + i*N+j] = sum;
+            }
+            if(i==13 && j==0){
+                // std::cout<<"sum : "<<sum<<std::endl;
+                // std::cout<<"addr : "<<add_offset + i*N+j<<std::endl;
+            }
+            // std::cout<<"i : "<<i<<std::endl;
+            // std::cout<<"j : "<<j<<std::endl;
         }
     }
 
@@ -458,6 +494,31 @@ void conv_compute_dataflow(int R, int S, int C, int K, int P, int strides,
                     }
                 }
                 int out_idx = k * (outX * outY) + i * outY + j;
+
+                // if(out_idx == 253){
+                //     std::cout<<"sum : "<<sum<<std::endl;
+                //     for (int c = 0; c < C; ++c) {
+                //         for (int r = 0; r < R; ++r) {
+                //             for (int s = 0; s < S; ++s) {
+                //                 int in_row = i * strides + r;
+                //                 int in_col = j * strides + s;
+                //                 int pad_idx = c * (padded_X * padded_Y) + in_row * padded_Y + in_col;
+                //                 std::cout<<padded_input[pad_idx]<<" ";
+                //             }
+                //         }
+                //     }
+                //     std::cout<<std::endl;
+                //     for (int c = 0; c < C; ++c) {
+                //         for (int r = 0; r < R; ++r) {
+                //             for (int s = 0; s < S; ++s) {
+                //                 int filt_idx = k * (C * R * S) + c * (R * S) + r * S + s;
+                //                 std::cout<<filters[filt_idx]<<" ";
+                //             }
+                //         }
+                //     }
+                //     std::cout<<std::endl;
+                // }
+
                 sum += neuron_state[out_idx];
                 if (sum >= V_th) {
                     output[out_idx] = 1;

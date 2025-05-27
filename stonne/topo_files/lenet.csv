@@ -1,0 +1,6 @@
+layer_type,R,S,C,K,X,Y,P,stride,pooling_size,pooling_stride,input_neuron,output_neuron,batch
+conv_pooling,5,5,1,6,28,28,0,1,2,2,-1,-1,-1
+conv_pooling,5,5,6,16,12,12,0,1,2,2,-1,-1,-1
+fc,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,256,120,1
+fc,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,120,84,1
+fc,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,84,10,1

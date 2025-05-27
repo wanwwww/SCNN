@@ -35,7 +35,7 @@ void PoolingModule::receive(){
     //std::cout<<"pooling module receive data : "<<std::endl;
     if(input_connection->existPendingData()){
         //std::cout<<"yes"<<std::endl;
-        std::vector<DataPackage*> data_received = input_connection->receive();
+        std::vector<std::shared_ptr<DataPackage>> data_received = input_connection->receive();
         assert(data_received.size() == 1);
         std::vector<bool> data = data_received[0]->get_data_vector(); // 从SRAM中读取到的数据
         std::vector<bool> unpacking_data;
@@ -44,7 +44,7 @@ void PoolingModule::receive(){
             unpacking_data.push_back(data[i*2]);
             unpacking_data.push_back(data[i*2+1]);
             //std::cout<<"pooling unit : "<<i<<"      data is : "<<data[i*2]<<" and "<<data[i*2+1]<<std::endl;
-            DataPackage* unpacked_data = new DataPackage(unpacking_data, data_received[0]->channel_num, data_received[0]->retrieve_num); // 发送给池化单元的数据包
+            std::shared_ptr<DataPackage> unpacked_data = std::make_shared<DataPackage>(unpacking_data, data_received[0]->channel_num, data_received[0]->retrieve_num); // 发送给池化单元的数据包
             poolingtable[i]->input_fifo->push(unpacked_data);
             unpacking_data.clear();
         }

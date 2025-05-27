@@ -16,6 +16,7 @@
 
 class Accumulator : public Unit {
 private:
+
     unsigned int input_ports;    // Input port 
     unsigned int output_ports;   // output port 
     unsigned int buffers_capacity;   //Buffers size in bytes
@@ -39,13 +40,13 @@ private:
     cycles_t latency;        // Number of cycles to compute a sum. This is configurable since can vary depending on the implementation technology and frequency
 
     //Operation functions. This functions can be changed in order to perform different types of length operations
-    DataPackage* perform_operation_2_operands(DataPackage* pck_left, DataPackage* pck_right);    //Perform 2:1 sum
+    std::shared_ptr<DataPackage> perform_operation_2_operands(std::shared_ptr<DataPackage> pck_left, std::shared_ptr<DataPackage> pck_right);    //Perform 2:1 sum
 
     cycles_t local_cycle;
     ASwitchStats aswitchStats; //To track the behaviour of the FEASwitch
 
     //Extensions
-    DataPackage* temporal_register; //Temporal register to accumulate partial sums  暂存寄存器，用于存储部分和 
+    std::shared_ptr<DataPackage> temporal_register; //Temporal register to accumulate partial sums  暂存寄存器，用于存储部分和 
     unsigned int n_psums; //Number of psums before accumulation  接收到的部分和的数目 
     unsigned int current_psum; //Current psum performed
     unsigned int n_accumulator;

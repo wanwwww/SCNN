@@ -1,0 +1,541 @@
+Call runConvandPooling_DataFlow_2 function !!! 1
+[1;33mStart simulation layer : [0m1 conv_pooling
+=============================================== weight loop ===================================================== 0/0
+load the weight cycles : 274
+load the first input cycles : 136
+current weight loop begin cycles : 410
+======================================== input loop ========================================= 0/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 1113
+======================================== input loop ========================================= 1/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 1849
+======================================== input loop ========================================= 2/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 2552
+======================================== input loop ========================================= 3/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 3288
+======================================== input loop ========================================= 4/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 3991
+======================================== input loop ========================================= 5/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 4727
+======================================== input loop ========================================= 6/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 5430
+======================================== input loop ========================================= 7/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 6166
+======================================== input loop ========================================= 8/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 6869
+======================================== input loop ========================================= 9/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 7605
+======================================== input loop ========================================= 10/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 8308
+======================================== input loop ========================================= 11/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 9044
+======================================== input loop ========================================= 12/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 9747
+======================================== input loop ========================================= 13/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 10483
+======================================== input loop ========================================= 14/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 11186
+======================================== input loop ========================================= 15/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 11922
+======================================== input loop ========================================= 16/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 12625
+======================================== input loop ========================================= 17/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 13361
+======================================== input loop ========================================= 18/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 14064
+======================================== input loop ========================================= 19/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 14800
+======================================== input loop ========================================= 20/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 15503
+======================================== input loop ========================================= 21/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 16239
+======================================== input loop ========================================= 22/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 16942
+======================================== input loop ========================================= 23/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 17678
+======================================== input loop ========================================= 24/27
+load next input cycles : 926
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 18604
+======================================== input loop ========================================= 25/27
+load next input cycles : 92
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 19340
+======================================== input loop ========================================= 26/27
+load next input cycles : 366
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+process_pooling and write output cycles : 0
+
+Global cycles : 20043
+======================================== input loop ========================================= 27/27
+load next input cycles : 0
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+process_conv_and_pooling cycles : 684
+write neuron_state cycles : 19
+[1;32m POOLING layer Test passed correctly[0m
+
+process_pooling cycles : 26
+write output cycles : 7
+process_pooling and write output cycles : 33
+
+Global cycles : 20779
+current cycles : 20779
+[1;32mOVER Test passed correctly[0m
+

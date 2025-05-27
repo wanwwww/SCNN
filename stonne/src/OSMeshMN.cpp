@@ -8,6 +8,8 @@
 //By the default the three ports values will be set as one single data size
 OSMeshMN::OSMeshMN(id_t id, std::string name, Config stonne_cfg) : MultiplierNetwork(id, name) { 
     //Extracting the input parameters
+
+    // std::cout<<"debug in OSMeshMN constructor function  0"<<std::endl;
     this->ms_rows = stonne_cfg.m_MSNetworkCfg.ms_rows;
     this->ms_cols = stonne_cfg.m_MSNetworkCfg.ms_cols;
 
@@ -21,12 +23,13 @@ OSMeshMN::OSMeshMN(id_t id, std::string name, Config stonne_cfg) : MultiplierNet
         for(int j=0; j < this->ms_cols; j++) { // From left to right of the structure
             std::string ms_str="MultiplierOS "+std::to_string(i)+":"+std::to_string(j);
 	        unsigned int ms_id = i*this->ms_cols + j;
+            //std::cout<<"ms_id : "<<ms_id<<std::endl;
 	        MultiplierOS* ms = new MultiplierOS(ms_id, ms_str, i, j,stonne_cfg);
             std::pair<int, int> rowandcolumn (i,j);
             mswitchtable[rowandcolumn] = ms;
 	    }
     }
-
+    // std::cout<<"debug in OSMeshMN constructor function  1"<<std::endl;
     // 乘法器节点创建好之后设置物理连接 
     setPhysicalConnection(); //Set Mesh links (top, left, right, bottom)
 }
@@ -154,12 +157,16 @@ std::map<std::pair<int,int>, MultiplierOS*> OSMeshMN::getMSwitches() {
 // 使用CompilerMultiplierMesh类生成信号的具体配置
 // 设置每个乘法器的转发信号和虚拟神经元分配 
 void OSMeshMN::configureSignals(Tile* current_tile, DNNLayer* dnn_layer, unsigned int ms_rows, unsigned int ms_cols) {
+    //std::cout<<"debug in OSMeshMN"<<std::endl;
     CompilerMultiplierMesh* compiler = new CompilerMultiplierMesh();
+    //std::cout<<"debug1"<<std::endl;
     compiler->configureSignals(current_tile, dnn_layer, ms_rows, ms_cols);
+    //std::cout<<"debug2"<<std::endl;
     std::map<std::pair<int,int>, bool> forwarding_bottom_signals = compiler->get_forwarding_bottom_enabled();
     std::map<std::pair<int,int>, bool> forwarding_right_signals = compiler->get_forwarding_right_enabled();
     std::map<std::pair<int,int>, unsigned int> ms_vn_configuration = compiler->get_ms_vn_configuration();
-    
+    //std::cout<<"ms_rows : "<<ms_rows<<std::endl;
+    //std::cout<<"ms_cols : "<<ms_cols<<std::endl;
     //Configuring signals
     for(int i=0; i < ms_rows; i++) {
         for(int j=0; j < ms_cols; j++) {

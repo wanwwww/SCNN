@@ -1,0 +1,3485 @@
+
+****************************************************************************************************************
+                                   Call runConv_DataFlow_3 function                                             
+****************************************************************************************************************
+
+[1;33mStart simulation layer : [0m1 conv
+load the first weights cycles : 258
+=============================================== weight loop ===================================================== 0/3
+load the first input cycles : 88
+current weight loop begin cycles : 346
+======================================== input loop ========================================= 0/31
+load next input cycles : 68
+load next weight cycles : 280
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 731
+======================================== input loop ========================================= 1/31
+load next input cycles : 299
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 1116
+======================================== input loop ========================================= 2/31
+load next input cycles : 191
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 1501
+======================================== input loop ========================================= 3/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 1886
+======================================== input loop ========================================= 4/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 2271
+======================================== input loop ========================================= 5/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 2656
+======================================== input loop ========================================= 6/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 3041
+======================================== input loop ========================================= 7/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 3426
+======================================== input loop ========================================= 8/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 3811
+======================================== input loop ========================================= 9/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 4196
+======================================== input loop ========================================= 10/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 4581
+======================================== input loop ========================================= 11/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 4966
+======================================== input loop ========================================= 12/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 5351
+======================================== input loop ========================================= 13/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 5736
+======================================== input loop ========================================= 14/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 6121
+======================================== input loop ========================================= 15/31
+load next input cycles : 343
+load next weight cycles : 0
+13 rows data is: 
+0 1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 1 0 1 1 
+1 7 0 0 4 5 5 7 5 5 7 5 4 6 0 5 4 6 3 2 7 6 4 0 0 4 6 
+packed_neuron[13] : 45
+packed_output[13] : 0
+packed_neuron[13] : 40
+packed_output[13] : 0
+packed_neuron[13] : 53
+packed_output[13] : 0
+packed_neuron[13] : 39
+packed_output[13] : 0
+packed_neuron[13] : 46
+packed_output[13] : 0
+packed_neuron[13] : 45
+packed_output[13] : 0
+packed_neuron[13] : 47
+packed_output[13] : 0
+packed_neuron[13] : 58
+packed_output[13] : 0
+packed_neuron[13] : 28
+packed_output[13] : 0
+packed_neuron[13] : 34
+packed_output[13] : 0
+packed_neuron[13] : 50
+packed_output[13] : 0
+packed_neuron[13] : 53
+packed_output[13] : 0
+packed_neuron[13] : 53
+packed_output[13] : 0
+packed_neuron[13] : 50
+packed_output[13] : 0
+packed_neuron[13] : 49
+packed_output[13] : 0
+packed_neuron[13] : 40
+packed_output[13] : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 6506
+======================================== input loop ========================================= 16/31
+load next input cycles : 857
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 7363
+======================================== input loop ========================================= 17/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 7748
+======================================== input loop ========================================= 18/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 8133
+======================================== input loop ========================================= 19/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 8518
+======================================== input loop ========================================= 20/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 8903
+======================================== input loop ========================================= 21/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 9288
+======================================== input loop ========================================= 22/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 9673
+======================================== input loop ========================================= 23/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 10058
+======================================== input loop ========================================= 24/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 10443
+======================================== input loop ========================================= 25/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 10828
+======================================== input loop ========================================= 26/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 11213
+======================================== input loop ========================================= 27/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 11598
+======================================== input loop ========================================= 28/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 11983
+======================================== input loop ========================================= 29/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 12368
+======================================== input loop ========================================= 30/31
+load next input cycles : 215
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 12753
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 13138
+=============================================== weight loop ===================================================== 1/3
+load the first input cycles : 512
+current weight loop begin cycles : 13650
+======================================== input loop ========================================= 0/31
+load next input cycles : 68
+load next weight cycles : 280
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 14035
+======================================== input loop ========================================= 1/31
+load next input cycles : 299
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 14420
+======================================== input loop ========================================= 2/31
+load next input cycles : 191
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 14805
+======================================== input loop ========================================= 3/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 15190
+======================================== input loop ========================================= 4/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 15575
+======================================== input loop ========================================= 5/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 15960
+======================================== input loop ========================================= 6/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 16345
+======================================== input loop ========================================= 7/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 16730
+======================================== input loop ========================================= 8/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 17115
+======================================== input loop ========================================= 9/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 17500
+======================================== input loop ========================================= 10/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 17885
+======================================== input loop ========================================= 11/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 18270
+======================================== input loop ========================================= 12/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 18655
+======================================== input loop ========================================= 13/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 19040
+======================================== input loop ========================================= 14/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 19425
+======================================== input loop ========================================= 15/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 19810
+======================================== input loop ========================================= 16/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 20195
+======================================== input loop ========================================= 17/31
+load next input cycles : 983
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 21178
+======================================== input loop ========================================= 18/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 21563
+======================================== input loop ========================================= 19/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 21948
+======================================== input loop ========================================= 20/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 22333
+======================================== input loop ========================================= 21/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 22718
+======================================== input loop ========================================= 22/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 23103
+======================================== input loop ========================================= 23/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 23488
+======================================== input loop ========================================= 24/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 23873
+======================================== input loop ========================================= 25/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 24258
+======================================== input loop ========================================= 26/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 24643
+======================================== input loop ========================================= 27/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 25028
+======================================== input loop ========================================= 28/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 25413
+======================================== input loop ========================================= 29/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 25798
+======================================== input loop ========================================= 30/31
+load next input cycles : 215
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 26183
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 26568
+=============================================== weight loop ===================================================== 2/3
+load the first input cycles : 512
+current weight loop begin cycles : 27080
+======================================== input loop ========================================= 0/31
+load next input cycles : 68
+load next weight cycles : 280
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 27465
+======================================== input loop ========================================= 1/31
+load next input cycles : 299
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 27850
+======================================== input loop ========================================= 2/31
+load next input cycles : 191
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 28235
+======================================== input loop ========================================= 3/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 28620
+======================================== input loop ========================================= 4/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 29005
+======================================== input loop ========================================= 5/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 29390
+======================================== input loop ========================================= 6/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 29775
+======================================== input loop ========================================= 7/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 30160
+======================================== input loop ========================================= 8/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 30545
+======================================== input loop ========================================= 9/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 30930
+======================================== input loop ========================================= 10/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 31315
+======================================== input loop ========================================= 11/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 31700
+======================================== input loop ========================================= 12/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 32085
+======================================== input loop ========================================= 13/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 32470
+======================================== input loop ========================================= 14/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 32855
+======================================== input loop ========================================= 15/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 33240
+======================================== input loop ========================================= 16/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 33625
+======================================== input loop ========================================= 17/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 34010
+======================================== input loop ========================================= 18/31
+load next input cycles : 879
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 34889
+======================================== input loop ========================================= 19/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 35274
+======================================== input loop ========================================= 20/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 35659
+======================================== input loop ========================================= 21/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 36044
+======================================== input loop ========================================= 22/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 36429
+======================================== input loop ========================================= 23/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 36814
+======================================== input loop ========================================= 24/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 37199
+======================================== input loop ========================================= 25/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 37584
+======================================== input loop ========================================= 26/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 37969
+======================================== input loop ========================================= 27/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 38354
+======================================== input loop ========================================= 28/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 38739
+======================================== input loop ========================================= 29/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 39124
+======================================== input loop ========================================= 30/31
+load next input cycles : 215
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 39509
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 39894
+=============================================== weight loop ===================================================== 3/3
+load the first input cycles : 512
+current weight loop begin cycles : 40406
+======================================== input loop ========================================= 0/31
+load next input cycles : 68
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 40791
+======================================== input loop ========================================= 1/31
+load next input cycles : 299
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 41176
+======================================== input loop ========================================= 2/31
+load next input cycles : 191
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 41561
+======================================== input loop ========================================= 3/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 41946
+======================================== input loop ========================================= 4/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 42331
+======================================== input loop ========================================= 5/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 42716
+======================================== input loop ========================================= 6/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 43101
+======================================== input loop ========================================= 7/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 43486
+======================================== input loop ========================================= 8/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 43871
+======================================== input loop ========================================= 9/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 44256
+======================================== input loop ========================================= 10/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 44641
+======================================== input loop ========================================= 11/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 45026
+======================================== input loop ========================================= 12/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 45411
+======================================== input loop ========================================= 13/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 45796
+======================================== input loop ========================================= 14/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 46181
+======================================== input loop ========================================= 15/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 46566
+======================================== input loop ========================================= 16/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 46951
+======================================== input loop ========================================= 17/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 47336
+======================================== input loop ========================================= 18/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 47721
+======================================== input loop ========================================= 19/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 48106
+======================================== input loop ========================================= 20/31
+load next input cycles : 799
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 48905
+======================================== input loop ========================================= 21/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 49290
+======================================== input loop ========================================= 22/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 49675
+======================================== input loop ========================================= 23/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 50060
+======================================== input loop ========================================= 24/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 50445
+======================================== input loop ========================================= 25/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 50830
+======================================== input loop ========================================= 26/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 51215
+======================================== input loop ========================================= 27/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 51600
+======================================== input loop ========================================= 28/31
+load next input cycles : 239
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 51985
+======================================== input loop ========================================= 29/31
+load next input cycles : 343
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 52370
+======================================== input loop ========================================= 30/31
+load next input cycles : 215
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 52755
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 385
+write result cycles : 65
+process_conv and write result cycles : 450
+
+Global cycles : 53205
+sum : 41
+0 1 0 1 0 0 0 1 1 0 1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 
+1 7 0 0 4 5 5 7 5 5 7 5 4 6 0 5 4 6 3 2 7 6 4 0 0 4 6 
+current cycles : 53205
+[1;32mOVER Test passed correctly[0m
+
+
+****************************************************************************************************************
+                                  Call runConvandPooling_DataFlow_2 function                                    
+****************************************************************************************************************
+
+[1;33mStart simulation layer : [0m2 conv_pooling
+load the first weights cycles : 4650
+=============================================== weight loop ===================================================== 0/3
+load the first input cycles : 576
+current weight loop begin cycles : 58431
+======================================== input loop ========================================= 0/31
+load next input cycles : 1652
+load next weight cycles : 4378
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 65588
+======================================== input loop ========================================= 1/31
+load next input cycles : 1088
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 72810
+======================================== input loop ========================================= 2/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 80032
+======================================== input loop ========================================= 3/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 87254
+======================================== input loop ========================================= 4/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 94476
+======================================== input loop ========================================= 5/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 101698
+======================================== input loop ========================================= 6/31
+load next input cycles : 1916
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 108920
+======================================== input loop ========================================= 7/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 116142
+======================================== input loop ========================================= 8/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 123364
+======================================== input loop ========================================= 9/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 130586
+======================================== input loop ========================================= 10/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 137808
+======================================== input loop ========================================= 11/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 145030
+======================================== input loop ========================================= 12/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 152252
+======================================== input loop ========================================= 13/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 159474
+======================================== input loop ========================================= 14/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 166696
+======================================== input loop ========================================= 15/31
+load next input cycles : 1791
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 173918
+======================================== input loop ========================================= 16/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 181140
+======================================== input loop ========================================= 17/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 188362
+======================================== input loop ========================================= 18/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 195584
+======================================== input loop ========================================= 19/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 202806
+======================================== input loop ========================================= 20/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 210028
+======================================== input loop ========================================= 21/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 217250
+======================================== input loop ========================================= 22/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 224472
+======================================== input loop ========================================= 23/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 231694
+======================================== input loop ========================================= 24/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 238916
+======================================== input loop ========================================= 25/31
+load next input cycles : 1823
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 246138
+======================================== input loop ========================================= 26/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 253360
+======================================== input loop ========================================= 27/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 260582
+======================================== input loop ========================================= 28/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 267804
+======================================== input loop ========================================= 29/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 275026
+======================================== input loop ========================================= 30/31
+load next input cycles : 796
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 282248
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 289470
+=============================================== weight loop ===================================================== 1/3
+load the first input cycles : 757
+current weight loop begin cycles : 290227
+======================================== input loop ========================================= 0/31
+load next input cycles : 1232
+load next weight cycles : 5258
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 297449
+======================================== input loop ========================================= 1/31
+load next input cycles : 1066
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 304671
+======================================== input loop ========================================= 2/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 311893
+======================================== input loop ========================================= 3/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 319115
+======================================== input loop ========================================= 4/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 326337
+======================================== input loop ========================================= 5/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 333559
+======================================== input loop ========================================= 6/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 340781
+======================================== input loop ========================================= 7/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 348003
+======================================== input loop ========================================= 8/31
+load next input cycles : 1916
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 355225
+======================================== input loop ========================================= 9/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 362447
+======================================== input loop ========================================= 10/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 369669
+======================================== input loop ========================================= 11/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 376891
+======================================== input loop ========================================= 12/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 384113
+======================================== input loop ========================================= 13/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 391335
+======================================== input loop ========================================= 14/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 398557
+======================================== input loop ========================================= 15/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 405779
+======================================== input loop ========================================= 16/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 413001
+======================================== input loop ========================================= 17/31
+load next input cycles : 1791
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 420223
+======================================== input loop ========================================= 18/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 427445
+======================================== input loop ========================================= 19/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 434667
+======================================== input loop ========================================= 20/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 441889
+======================================== input loop ========================================= 21/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 449111
+======================================== input loop ========================================= 22/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 456333
+======================================== input loop ========================================= 23/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 463555
+======================================== input loop ========================================= 24/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 470777
+======================================== input loop ========================================= 25/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 477999
+======================================== input loop ========================================= 26/31
+load next input cycles : 1916
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 485221
+======================================== input loop ========================================= 27/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 492443
+======================================== input loop ========================================= 28/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 499665
+======================================== input loop ========================================= 29/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 506887
+======================================== input loop ========================================= 30/31
+load next input cycles : 796
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 514109
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 521331
+=============================================== weight loop ===================================================== 2/3
+load the first input cycles : 757
+current weight loop begin cycles : 522088
+======================================== input loop ========================================= 0/31
+load next input cycles : 1232
+load next weight cycles : 4354
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 529310
+======================================== input loop ========================================= 1/31
+load next input cycles : 1652
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 536532
+======================================== input loop ========================================= 2/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 543754
+======================================== input loop ========================================= 3/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 550976
+======================================== input loop ========================================= 4/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 558198
+======================================== input loop ========================================= 5/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 565420
+======================================== input loop ========================================= 6/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 572642
+======================================== input loop ========================================= 7/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 579864
+======================================== input loop ========================================= 8/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 587086
+======================================== input loop ========================================= 9/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 594308
+======================================== input loop ========================================= 10/31
+load next input cycles : 1916
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 601530
+======================================== input loop ========================================= 11/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 608752
+======================================== input loop ========================================= 12/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 615974
+======================================== input loop ========================================= 13/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 623196
+======================================== input loop ========================================= 14/31
+load next input cycles : 1309
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 630418
+======================================== input loop ========================================= 15/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 637640
+======================================== input loop ========================================= 16/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 644862
+======================================== input loop ========================================= 17/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 652084
+======================================== input loop ========================================= 18/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 659306
+======================================== input loop ========================================= 19/31
+load next input cycles : 1791
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 666528
+======================================== input loop ========================================= 20/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 673750
+======================================== input loop ========================================= 21/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 680972
+======================================== input loop ========================================= 22/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 688194
+======================================== input loop ========================================= 23/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 695416
+======================================== input loop ========================================= 24/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 702638
+======================================== input loop ========================================= 25/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 709860
+======================================== input loop ========================================= 26/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 717082
+======================================== input loop ========================================= 27/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 724304
+======================================== input loop ========================================= 28/31
+load next input cycles : 1916
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 731526
+======================================== input loop ========================================= 29/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 738748
+======================================== input loop ========================================= 30/31
+load next input cycles : 796
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 745970
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 753192
+=============================================== weight loop ===================================================== 3/3
+load the first input cycles : 757
+current weight loop begin cycles : 753949
+======================================== input loop ========================================= 0/31
+load next input cycles : 1232
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 761171
+======================================== input loop ========================================= 1/31
+load next input cycles : 1044
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 768393
+======================================== input loop ========================================= 2/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 775615
+======================================== input loop ========================================= 3/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 782837
+======================================== input loop ========================================= 4/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 790059
+======================================== input loop ========================================= 5/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 797281
+======================================== input loop ========================================= 6/31
+load next input cycles : 1916
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 804503
+======================================== input loop ========================================= 7/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 811725
+======================================== input loop ========================================= 8/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 818947
+======================================== input loop ========================================= 9/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 826169
+======================================== input loop ========================================= 10/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 833391
+======================================== input loop ========================================= 11/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 840613
+======================================== input loop ========================================= 12/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 847835
+======================================== input loop ========================================= 13/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 855057
+======================================== input loop ========================================= 14/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 862279
+======================================== input loop ========================================= 15/31
+load next input cycles : 1791
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 869501
+======================================== input loop ========================================= 16/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 876723
+======================================== input loop ========================================= 17/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 883945
+======================================== input loop ========================================= 18/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 891167
+======================================== input loop ========================================= 19/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 898389
+======================================== input loop ========================================= 20/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 905611
+======================================== input loop ========================================= 21/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 912833
+======================================== input loop ========================================= 22/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 920055
+======================================== input loop ========================================= 23/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 927277
+======================================== input loop ========================================= 24/31
+load next input cycles : 1916
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 934499
+======================================== input loop ========================================= 25/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 941721
+======================================== input loop ========================================= 26/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 948943
+======================================== input loop ========================================= 27/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 956165
+======================================== input loop ========================================= 28/31
+load next input cycles : 1308
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 963387
+======================================== input loop ========================================= 29/31
+load next input cycles : 1183
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 970609
+======================================== input loop ========================================= 30/31
+load next input cycles : 796
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling and write output cycles : 0
+
+Global cycles : 977831
+======================================== input loop ========================================= 31/31
+load next input cycles : 0
+load next weight cycles : 0
+
+process_conv_and_pooling cycles : 7156
+write neuron_state cycles : 49
+process_pooling cycles : 66
+write output cycles : 17
+process_pooling and write output cycles : 83
+
+Global cycles : 985119
+current cycles : 985119
+[1;32mOVER Test passed correctly[0m
+
+
+****************************************************************************************************************
+                                   Call runConv_DataFlow_3 function                                             
+****************************************************************************************************************
+
+[1;33mStart simulation layer : [0m3 conv
+load the first weights cycles : 4650
+=============================================== weight loop ===================================================== 0/7
+load the first input cycles : 576
+current weight loop begin cycles : 990345
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 4984
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 995861
+======================================== input loop ========================================= 1/15
+load next input cycles : 777
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 999945
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1004029
+======================================== input loop ========================================= 3/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1008113
+======================================== input loop ========================================= 4/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1012197
+======================================== input loop ========================================= 5/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1016281
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1020365
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1024449
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1028533
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1032617
+======================================== input loop ========================================= 10/15
+load next input cycles : 1327
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1036701
+======================================== input loop ========================================= 11/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1040785
+======================================== input loop ========================================= 12/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1044869
+======================================== input loop ========================================= 13/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1048953
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1053037
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+13 rows data is: 
+1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+5 6 6 6 3 4 0 7 5 5 2 3 2 2 6 4 1 5 2 3 0 5 2 6 7 6 3 6 4 1 4 1 0 3 7 3 7 7 2 4 4 4 7 7 7 5 3 0 2 5 4 2 2 6 0 1 4 3 0 0 5 4 2 5 7 1 0 6 1 2 2 5 7 1 4 6 6 7 6 0 4 2 3 6 0 3 0 4 7 0 5 4 4 7 1 4 0 1 2 1 3 5 7 2 6 3 0 5 3 7 5 7 1 0 6 2 4 6 6 3 6 3 7 2 2 0 6 3 1 1 4 4 6 3 7 4 7 7 1 2 6 7 1 0 7 7 2 3 5 0 6 3 4 5 6 6 5 4 1 6 5 6 3 3 1 2 0 0 1 1 2 0 0 4 0 0 3 2 3 1 2 2 4 6 7 2 5 5 7 6 3 4 4 6 0 6 0 0 6 2 1 1 2 2 5 2 2 0 4 5 1 6 7 6 5 7 0 2 4 7 0 7 4 5 6 4 3 6 4 1 0 5 2 2 7 7 4 1 0 0 7 1 7 6 7 4 5 0 6 1 7 6 1 3 3 7 7 6 5 3 0 6 1 2 0 0 2 5 2 2 5 1 3 4 7 3 0 5 3 6 6 2 5 7 6 0 6 5 7 4 1 7 2 2 1 2 2 3 7 4 5 5 5 1 1 5 4 2 2 7 0 0 1 5 0 7 6 6 5 5 2 6 4 4 0 5 7 2 1 6 7 6 3 4 7 5 1 3 7 3 2 7 4 4 5 4 3 3 2 0 0 5 6 4 1 6 1 0 1 2 7 0 1 2 4 0 7 6 4 6 1 6 6 5 2 3 1 6 6 4 6 6 1 5 2 2 3 3 3 4 6 2 4 7 4 1 7 4 7 3 2 0 2 0 6 4 3 7 2 1 3 1 7 4 6 1 7 1 5 2 6 3 4 2 2 0 3 1 4 2 5 7 3 7 7 1 3 3 0 6 4 4 7 4 0 5 5 7 6 2 1 4 5 5 7 7 6 2 1 2 5 6 1 0 5 1 1 0 4 1 6 0 5 5 4 6 2 2 5 1 4 7 5 2 4 4 1 2 7 2 5 4 0 6 4 5 7 5 6 3 6 4 4 4 2 0 2 4 2 7 5 7 6 3 1 3 7 2 5 6 5 2 2 5 1 6 3 0 3 1 4 2 5 0 6 7 0 0 4 3 7 1 2 6 4 3 1 4 5 6 2 2 1 5 0 2 3 3 2 7 4 6 1 1 6 7 1 7 7 5 2 6 6 4 4 3 
+packed_neuron[13] : 57
+packed_output[13] : 0
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 57
+packed_output[13] : 0
+packed_neuron[13] : 54
+packed_output[13] : 0
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 59
+packed_output[13] : 0
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 58
+packed_output[13] : 0
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 0
+packed_output[13] : 1
+packed_neuron[13] : 57
+packed_output[13] : 0
+packed_neuron[13] : 51
+packed_output[13] : 0
+packed_neuron[13] : 0
+packed_output[13] : 1
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1057121
+=============================================== weight loop ===================================================== 1/7
+load the first input cycles : 1007
+current weight loop begin cycles : 1058128
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 4650
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1063310
+======================================== input loop ========================================= 1/15
+load next input cycles : 777
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1067394
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1071478
+======================================== input loop ========================================= 3/15
+load next input cycles : 1423
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1075562
+======================================== input loop ========================================= 4/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1079646
+======================================== input loop ========================================= 5/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1083730
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1087814
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1091898
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1095982
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1100066
+======================================== input loop ========================================= 10/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1104150
+======================================== input loop ========================================= 11/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1108234
+======================================== input loop ========================================= 12/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1112318
+======================================== input loop ========================================= 13/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1116402
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1120486
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1124570
+=============================================== weight loop ===================================================== 2/7
+load the first input cycles : 1007
+current weight loop begin cycles : 1125577
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 4962
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1131071
+======================================== input loop ========================================= 1/15
+load next input cycles : 755
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1135155
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1139239
+======================================== input loop ========================================= 3/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1143323
+======================================== input loop ========================================= 4/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1147407
+======================================== input loop ========================================= 5/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1151491
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1155575
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1159659
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1163743
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1167827
+======================================== input loop ========================================= 10/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1171911
+======================================== input loop ========================================= 11/15
+load next input cycles : 1423
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1175995
+======================================== input loop ========================================= 12/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1180079
+======================================== input loop ========================================= 13/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1184163
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1188247
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1192331
+=============================================== weight loop ===================================================== 3/7
+load the first input cycles : 1007
+current weight loop begin cycles : 1193338
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 4650
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1198520
+======================================== input loop ========================================= 1/15
+load next input cycles : 777
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1202604
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1206688
+======================================== input loop ========================================= 3/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1210772
+======================================== input loop ========================================= 4/15
+load next input cycles : 1327
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1214856
+======================================== input loop ========================================= 5/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1218940
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1223024
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1227108
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1231192
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1235276
+======================================== input loop ========================================= 10/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1239360
+======================================== input loop ========================================= 11/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1243444
+======================================== input loop ========================================= 12/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1247528
+======================================== input loop ========================================= 13/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1251612
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1255696
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1259780
+=============================================== weight loop ===================================================== 4/7
+load the first input cycles : 1007
+current weight loop begin cycles : 1260787
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 4962
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1266281
+======================================== input loop ========================================= 1/15
+load next input cycles : 755
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1270365
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1274449
+======================================== input loop ========================================= 3/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1278533
+======================================== input loop ========================================= 4/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1282617
+======================================== input loop ========================================= 5/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1286701
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1290785
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1294869
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1298953
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1303037
+======================================== input loop ========================================= 10/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1307121
+======================================== input loop ========================================= 11/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1311205
+======================================== input loop ========================================= 12/15
+load next input cycles : 1327
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1315289
+======================================== input loop ========================================= 13/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1319373
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1323457
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1327541
+=============================================== weight loop ===================================================== 5/7
+load the first input cycles : 1007
+current weight loop begin cycles : 1328548
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 4650
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1333730
+======================================== input loop ========================================= 1/15
+load next input cycles : 777
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1337814
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1341898
+======================================== input loop ========================================= 3/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1345982
+======================================== input loop ========================================= 4/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1350066
+======================================== input loop ========================================= 5/15
+load next input cycles : 1423
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1354150
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1358234
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1362318
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1366402
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1370486
+======================================== input loop ========================================= 10/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1374570
+======================================== input loop ========================================= 11/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1378654
+======================================== input loop ========================================= 12/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1382738
+======================================== input loop ========================================= 13/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1386822
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1390906
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1394990
+=============================================== weight loop ===================================================== 6/7
+load the first input cycles : 1007
+current weight loop begin cycles : 1395997
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 4962
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1401491
+======================================== input loop ========================================= 1/15
+load next input cycles : 755
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1405575
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1409659
+======================================== input loop ========================================= 3/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1413743
+======================================== input loop ========================================= 4/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1417827
+======================================== input loop ========================================= 5/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1421911
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1425995
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1430079
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1434163
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1438247
+======================================== input loop ========================================= 10/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1442331
+======================================== input loop ========================================= 11/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1446415
+======================================== input loop ========================================= 12/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1450499
+======================================== input loop ========================================= 13/15
+load next input cycles : 1376
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1454583
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1458667
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1462751
+=============================================== weight loop ===================================================== 7/7
+load the first input cycles : 1007
+current weight loop begin cycles : 1463758
+======================================== input loop ========================================= 0/15
+load next input cycles : 532
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1467842
+======================================== input loop ========================================= 1/15
+load next input cycles : 777
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1471926
+======================================== input loop ========================================= 2/15
+load next input cycles : 663
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1476010
+======================================== input loop ========================================= 3/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1480094
+======================================== input loop ========================================= 4/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1484178
+======================================== input loop ========================================= 5/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1488262
+======================================== input loop ========================================= 6/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1492346
+======================================== input loop ========================================= 7/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1496430
+======================================== input loop ========================================= 8/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1500514
+======================================== input loop ========================================= 9/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1504598
+======================================== input loop ========================================= 10/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1508682
+======================================== input loop ========================================= 11/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1512766
+======================================== input loop ========================================= 12/15
+load next input cycles : 1279
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1516850
+======================================== input loop ========================================= 13/15
+load next input cycles : 815
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1520934
+======================================== input loop ========================================= 14/15
+load next input cycles : 719
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 49
+process_conv and write result cycles : 4133
+
+Global cycles : 1525018
+======================================== input loop ========================================= 15/15
+load next input cycles : 0
+load next weight cycles : 0
+process_conv cycles : 4084
+write result cycles : 64
+process_conv and write result cycles : 4148
+
+Global cycles : 1529166
+sum : 51
+1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+5 6 6 6 3 4 0 7 5 5 2 3 2 2 6 4 1 5 2 3 0 5 2 6 7 6 3 6 4 1 4 1 0 3 7 3 7 7 2 4 4 4 7 7 7 5 3 0 2 5 4 2 2 6 0 1 4 3 0 0 5 4 2 5 7 1 0 6 1 2 2 5 7 1 4 6 6 7 6 0 4 2 3 6 0 3 0 4 7 0 5 4 4 7 1 4 0 1 2 1 3 5 7 2 6 3 0 5 3 7 5 7 1 0 6 2 4 6 6 3 6 3 7 2 2 0 6 3 1 1 4 4 6 3 7 4 7 7 1 2 6 7 1 0 7 7 2 3 5 0 6 3 4 5 6 6 5 4 1 6 5 6 3 3 1 2 0 0 1 1 2 0 0 4 0 0 3 2 3 1 2 2 4 6 7 2 5 5 7 6 3 4 4 6 0 6 0 0 6 2 1 1 2 2 5 2 2 0 4 5 1 6 7 6 5 7 0 2 4 7 0 7 4 5 6 4 3 6 4 1 0 5 2 2 7 7 4 1 0 0 7 1 7 6 7 4 5 0 6 1 7 6 1 3 3 7 7 6 5 3 0 6 1 2 0 0 2 5 2 2 5 1 3 4 7 3 0 5 3 6 6 2 5 7 6 0 6 5 7 4 1 7 2 2 1 2 2 3 7 4 5 5 5 1 1 5 4 2 2 7 0 0 1 5 0 7 6 6 5 5 2 6 4 4 0 5 7 2 1 6 7 6 3 4 7 5 1 3 7 3 2 7 4 4 5 4 3 3 2 0 0 5 6 4 1 6 1 0 1 2 7 0 1 2 4 0 7 6 4 6 1 6 6 5 2 3 1 6 6 4 6 6 1 5 2 2 3 3 3 4 6 2 4 7 4 1 7 4 7 3 2 0 2 0 6 4 3 7 2 1 3 1 7 4 6 1 7 1 5 2 6 3 4 2 2 0 3 1 4 2 5 7 3 7 7 1 3 3 0 6 4 4 7 4 0 5 5 7 6 2 1 4 5 5 7 7 6 2 1 2 5 6 1 0 5 1 1 0 4 1 6 0 5 5 4 6 2 2 5 1 4 7 5 2 4 4 1 2 7 2 5 4 0 6 4 5 7 5 6 3 6 4 4 4 2 0 2 4 2 7 5 7 6 3 1 3 7 2 5 6 5 2 2 5 1 6 3 0 3 1 4 2 5 0 6 7 0 0 4 3 7 1 2 6 4 3 1 4 5 6 2 2 1 5 0 2 3 3 2 7 4 6 1 1 6 7 1 7 7 5 2 6 6 4 4 3 
+
+1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+5 6 6 6 3 4 0 7 5 5 2 3 2 2 6 4 1 5 2 3 0 5 2 6 7 6 3 6 4 1 4 1 0 3 7 3 7 7 2 4 4 4 7 7 7 5 3 0 2 5 4 2 2 6 0 1 4 3 0 0 5 4 2 5 7 1 0 6 1 2 2 5 7 1 4 6 6 7 6 0 4 2 3 6 0 3 0 4 7 0 5 4 4 7 1 4 0 1 2 1 3 5 7 2 6 3 0 5 3 7 5 7 1 0 6 2 4 6 6 3 6 3 7 2 2 0 6 3 1 1 4 4 6 3 7 4 7 7 1 2 6 7 1 0 7 7 2 3 5 0 6 3 4 5 6 6 5 4 1 6 5 6 3 3 1 2 0 0 1 1 2 0 0 4 0 0 3 2 3 1 2 2 4 6 7 2 5 5 7 6 3 4 4 6 0 6 0 0 6 2 1 1 2 2 5 2 2 0 4 5 1 6 7 6 5 7 0 2 4 7 0 7 4 5 6 4 3 6 4 1 0 5 2 2 7 7 4 1 0 0 7 1 7 6 7 4 5 0 6 1 7 6 1 3 3 7 7 6 5 3 0 6 1 2 0 0 2 5 2 2 5 1 3 4 7 3 0 5 3 6 6 2 5 7 6 0 6 5 7 4 1 7 2 2 1 2 2 3 7 4 5 5 5 1 1 5 4 2 2 7 0 0 1 5 0 7 6 6 5 5 2 6 4 4 0 5 7 2 1 6 7 6 3 4 7 5 1 3 7 3 2 7 4 4 5 4 3 3 2 0 0 5 6 4 1 6 1 0 1 2 7 0 1 2 4 0 7 6 4 6 1 6 6 5 2 3 1 6 6 4 6 6 1 5 2 2 3 3 3 4 6 2 4 7 4 1 7 4 7 3 2 0 2 0 6 4 3 7 2 1 3 1 7 4 6 1 7 1 5 2 6 3 4 2 2 0 3 1 4 2 5 7 3 7 7 1 3 3 0 6 4 4 7 4 0 5 5 7 6 2 1 4 5 5 7 7 6 2 1 2 5 6 1 0 5 1 1 0 4 1 6 0 5 5 4 6 2 2 5 1 4 7 5 2 4 4 1 2 7 2 5 4 0 6 4 5 7 5 6 3 6 4 4 4 2 0 2 4 2 7 5 7 6 3 1 3 7 2 5 6 5 2 2 5 1 6 3 0 3 1 4 2 5 0 6 7 0 0 4 3 7 1 2 6 4 3 1 4 5 6 2 2 1 5 0 2 3 3 2 7 4 6 1 1 6 7 1 7 7 5 2 6 6 4 4 3 
+
+ERROR position : 253  value ofmap simlator : 0  value ofmap cpu : 0
+ERROR position : 253  value nfmap simlator : 57  value nfmap cpu : 51

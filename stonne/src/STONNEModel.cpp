@@ -17,6 +17,8 @@
 
 Stonne::Stonne(Config stonne_cfg) {
     
+    // std::cout<<"debug in Stonne constructor function"<<std::endl;
+
     this->stonne_cfg=stonne_cfg;
 
     this->ms_size = stonne_cfg.m_MSNetworkCfg.ms_rows*stonne_cfg.m_MSNetworkCfg.ms_cols;
@@ -32,6 +34,8 @@ Stonne::Stonne(Config stonne_cfg) {
     
     // 乘法器网络
     this->msnet = new OSMeshMN(1, "OSMesh", stonne_cfg);  // id and name 
+
+    // std::cout<<"debug in Stonne constructor function after new msnet"<<std::endl;
 
     // 实例化分发网络
     //switch(DistributionNetwork). It is possible to create instances of other DistributionNetworks.h
@@ -292,7 +296,7 @@ void Stonne::cycle() {
         this->mem->cycle();
         auto end = std::chrono::steady_clock::now();
         this->time_mem+=std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-        //std::cout<<"mem completed"<<std::endl;
+        // std::cout<<"mem completed"<<std::endl;
 
         this->collectionBus->cycle(); 
 
@@ -460,16 +464,16 @@ void Stonne::testTile(unsigned int num_ms) {
 void Stonne::testDSNetwork(unsigned int num_ms) {
     //BRoadcast test
      /*
-    DataPackage* data_to_send = new DataPackage(32, 1, IACTIVATION, 0, BROADCAST);
-    std::vector<DataPackage*> vector_to_send;
+    std::shared_ptr<DataPackage> data_to_send = std::make_shared<DataPackage>(32, 1, IACTIVATION, 0, BROADCAST);
+    std::vector<std::shared_ptr<DataPackage>> vector_to_send;
     vector_to_send.push_back(data_to_send);
     this->inputConnection->send(vector_to_send);
     */
 
     //Unicast test
     /* 
-    DataPackage* data_to_send = new DataPackage(32, 500, IACTIVATION, 0, UNICAST, 6);
-    std::vector<DataPackage*> vector_to_send;
+    std::shared_ptr<DataPackage> data_to_send = std::make_shared<DataPackage>(32, 500, IACTIVATION, 0, UNICAST, 6);
+    std::vector<std::shared_ptr<DataPackage>> vector_to_send;
     vector_to_send.push_back(data_to_send);
     this->inputConnection->send(vector_to_send);
     */
@@ -485,8 +489,8 @@ void Stonne::testDSNetwork(unsigned int num_ms) {
     for(int i=0; i<6; i++)
         dests[i]=true;
 
-    DataPackage* data_to_send = new DataPackage(32, 1, IACTIVATION, 0, MULTICAST, dests, num_ms);
-    std::vector<DataPackage*> vector_to_send;
+    std::shared_ptr<DataPackage> data_to_send = std::make_shared<DataPackage>(32, 1, IACTIVATION, 0, MULTICAST, dests, num_ms);
+    std::vector<std::shared_ptr<DataPackage>> vector_to_send;
     vector_to_send.push_back(data_to_send);
     //this->inputDSConnection->send(vector_to_send);
     

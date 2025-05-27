@@ -16,6 +16,7 @@ using namespace std;
 // 将output_fifo中的数据通过outputConnection发送到下游模块 
 
 Accumulator::Accumulator(id_t id, std::string name, Config stonne_cfg, unsigned int n_accumulator)  : Unit(id, name) {
+
     this->n_accumulator = n_accumulator; // 累加器编号 
     this->input_ports = stonne_cfg.m_ASwitchCfg.input_ports;  // 2
     this->output_ports = stonne_cfg.m_ASwitchCfg.output_ports;  // 1
@@ -74,9 +75,9 @@ void Accumulator::setOutputConnection(Connection* outputConnection) {
 // 将output_fifo中的数据发送到输出连接中 
 void Accumulator::send() {
     if(!output_fifo->isEmpty()) {
-        std::vector<DataPackage*> vector_to_send_parent;
+        std::vector<std::shared_ptr<DataPackage>> vector_to_send_parent;
         while(!output_fifo->isEmpty()) {
-                DataPackage* pck = output_fifo->pop();
+                std::shared_ptr<DataPackage> pck = output_fifo->pop();
                 vector_to_send_parent.push_back(pck);
         }
 
@@ -95,7 +96,7 @@ void Accumulator::send() {
 // 接收输入连接的数据到input_fifo
 void Accumulator::receive() { 
     if(this->inputConnection->existPendingData()) { //If there is data to receive on the left
-    	std::vector<DataPackage*> data_received = this->inputConnection->receive(); //Copying the data to receive
+    	std::vector<std::shared_ptr<DataPackage>> data_received = this->inputConnection->receive(); //Copying the data to receive
 	    this->accumulatorStats.n_receives++;    //To track the stats
         for(int i=0; i<data_received.size(); i++) {
 
@@ -111,7 +112,7 @@ void Accumulator::receive() {
 }
 
 //Perform operation based on the parameter this->operation_mode
-DataPackage* Accumulator::perform_operation_2_operands(DataPackage* pck_left, DataPackage* pck_right) {
+std::shared_ptr<DataPackage> Accumulator::perform_operation_2_operands(std::shared_ptr<DataPackage> pck_left, std::shared_ptr<DataPackage> pck_right) {
     //Extracting the values
     assert(pck_left->get_vn() == pck_right->get_vn()); // vn must fit
     
@@ -131,7 +132,7 @@ DataPackage* Accumulator::perform_operation_2_operands(DataPackage* pck_left, Da
     }
 
     //Creating the result package with the output
-    DataPackage* result_pck = new DataPackage (sizeof(data_t), result, PSUM, 0, pck_left->get_vn(), this->operation_mode);  //TODO the size of the package corresponds with the data size
+    std::shared_ptr<DataPackage> result_pck = std::make_shared<DataPackage>(sizeof(data_t), result, PSUM, 0, pck_left->get_vn(), this->operation_mode);  //TODO the size of the package corresponds with the data size
     //Adding to the creation list to be deleted afterward
 //    this->psums_created.push_back(result_pck);
     return result_pck;
@@ -139,10 +140,10 @@ DataPackage* Accumulator::perform_operation_2_operands(DataPackage* pck_left, Da
 }
 
 void Accumulator::route() {
-    DataPackage* pck_received;
+    std::shared_ptr<DataPackage> pck_received;
     if(!input_fifo->isEmpty()) {
         pck_received = input_fifo->pop();
-        DataPackage* result;
+        std::shared_ptr<DataPackage> result;
         if(current_psum == 0) {  //There is no package yet to sum in this iteration
             //Creating package 0
             this->temporal_register = pck_received;
@@ -151,8 +152,10 @@ void Accumulator::route() {
         else {
             result = perform_operation_2_operands(this->temporal_register, pck_received);  // 是用new实例化得到的
 	        this->accumulatorStats.n_register_reads++; //To track the stats
-            delete this->temporal_register;
-            delete pck_received;
+            // delete this->temporal_register;  // ???????????????????????????????????????????????????????????????????
+            // this->temporal_register = nullptr;
+            // delete pck_received; // ????????????????????????????????????????????????????????????????????????????????????????????????????
+            // pck_received = nullptr;
             this->temporal_register = result;
 	        this->accumulatorStats.n_register_writes++;  //To track the stats
         }
@@ -168,8 +171,13 @@ void Accumulator::route() {
             this->current_psum++;
         }
 
+        // if(this->n_accumulator == 0){
+        //     std::cout<<"**********************************"<<std::endl;
+        //     std::cout<<"current_psum is : "<<this->current_psum<<std::endl;
+        //     std::cout<<"current_sum is : "<<this->temporal_register->data<<std::endl;
+        // }
+
     }
-        
 }
 
 //TODO

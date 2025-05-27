@@ -6,6 +6,7 @@
 #ifndef __Fifo_h__
 #define __Fifo_h__
 
+#include <memory>
 #include <queue>
 #include "DataPackage.h"
 #include "types.h"
@@ -14,18 +15,19 @@
 // 用于模拟有限容量的FIFO队列
 class Fifo {
 private:
-    std::queue<DataPackage*> fifo;
+    std::queue<std::shared_ptr<DataPackage>> fifo;
     
     unsigned int capacity; //Capacity in number of bits
     unsigned int capacity_words; //Capacity in number of words allowed. i.e., capacity_words = capacity / size_word
     FifoStats fifoStats; //Tracking parameters
 public:
     Fifo(unsigned int capacity);
+
     bool isEmpty();
     bool isFull();
-    void push(DataPackage* data);
-    DataPackage* pop();
-    DataPackage* front();
+    void push(std::shared_ptr<DataPackage> data);
+    std::shared_ptr<DataPackage> pop();
+    std::shared_ptr<DataPackage> front();
     unsigned int size(); //Return the number of elements in the fifo
     void printStats(std::ofstream& out, unsigned int indent);
     void printEnergy(std::ofstream& out, unsigned int indent);

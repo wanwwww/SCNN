@@ -67,7 +67,7 @@ public:
     void receive();  //Receive from top and left 从上或坐接收
 
     // 接收两个数据包作为输入，执行乘法操作并返回结果
-    DataPackage* perform_operation_2_operands(DataPackage* pck_left, DataPackage* pck_right); //Perform multiplication and returns result.
+    std::shared_ptr<DataPackage> perform_operation_2_operands(std::shared_ptr<DataPackage> pck_left, std::shared_ptr<DataPackage> pck_right); //Perform multiplication and returns result.
     
     void cycle(); //Computing a cyclels
     void resetSignals(); 

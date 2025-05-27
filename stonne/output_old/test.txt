@@ -1,0 +1,39 @@
+==1833637== Invalid write of size 4
+==1833637==    at 0x121903: Controller::load_input_data_step1_ppbuffer(int*, Dram*, int, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x15E57A: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637==  Address 0x12443090 is 0 bytes after a block of size 16,384 alloc'd
+==1833637==    at 0x4848583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1833637==    by 0x15E49B: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637== 
+==1833637== Invalid write of size 1
+==1833637==    at 0x484E909: memset (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1833637==    by 0x121864: Controller::load_input_data_step1_ppbuffer(int*, Dram*, int, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x15E57A: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637==  Address 0x12443094 is 4 bytes after a block of size 16,384 alloc'd
+==1833637==    at 0x4848583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1833637==    by 0x15E49B: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637== 
+==1833637== Invalid write of size 1
+==1833637==    at 0x484E9D0: memset (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1833637==    by 0x12176A: Controller::load_input_data_step1_ppbuffer(int*, Dram*, int, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x15E57A: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637==  Address 0x12443098 is 8 bytes after a block of size 16,384 alloc'd
+==1833637==    at 0x4848583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1833637==    by 0x15E49B: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637== 
+==1833637== Invalid write of size 1
+==1833637==    at 0x484E9DA: memset (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1833637==    by 0x12176A: Controller::load_input_data_step1_ppbuffer(int*, Dram*, int, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x15E57A: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637==  Address 0x1244309a is 10 bytes after a block of size 16,384 alloc'd
+==1833637==    at 0x4848583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1833637==    by 0x15E49B: Controller::runConv_DataFlow_3(int, int*, int*, int*, int*, layer_topology) (in /home/zww/SCNN/stonne/stonne)
+==1833637==    by 0x115D2A: main (in /home/zww/SCNN/stonne/stonne)
+==1833637== 

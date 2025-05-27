@@ -1,0 +1,4 @@
+[1;33mStart simulation layer : [0m1 fc
+current cycles : 648
+[1;32mOVER Test passed correctly[0m
+

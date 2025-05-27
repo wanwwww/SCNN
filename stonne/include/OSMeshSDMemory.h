@@ -129,7 +129,7 @@ private:
     //Aux functions
     void receive();
     void send();
-    void sendPackageToInputFifos(DataPackage* pck);
+    void sendPackageToInputFifos(std::shared_ptr<DataPackage> pck);
     std::vector<Connection*> getWritePortConnections()    const {return this->write_port_connections;}
     
     

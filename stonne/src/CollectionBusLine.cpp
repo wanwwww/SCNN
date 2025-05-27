@@ -51,7 +51,7 @@ Connection* CollectionBusLine::getInputPort(unsigned int inputID) {
 void CollectionBusLine::receive() {
     for(int i=0; i<this->input_connections.size(); i++) {
         if(input_connections[i]->existPendingData()) {
-            std::vector<DataPackage*> pck = input_connections[i]->receive();
+            std::vector<std::shared_ptr<DataPackage>> pck = input_connections[i]->receive();
             for(int j=0; j<pck.size(); j++) { //Actually this is 1
                 this->collectionbuslineStats.n_inputs_receive[i]+=1; //To track information. Number of packages received by each input line for this output port
                 input_fifos[i]->push(pck[j]); //Inserting the package into the fifo
@@ -87,11 +87,11 @@ void CollectionBusLine::cycle() {
     
     // 轮询从非空的FIFO中取出一个数据包，
     // 一次只取出一个数据包！！！
-    std::vector<DataPackage*> data_to_send;
+    std::vector<std::shared_ptr<DataPackage>> data_to_send;
     while(!selected && (n_iters < input_fifos.size())) { //if input not found or there is still data to look up
         if(!input_fifos[next_input_selected]->isEmpty()) { //If there is data in this input then
             selected=true;
-            DataPackage* pck = input_fifos[next_input_selected]->pop(); //Poping from the fifo
+            std::shared_ptr<DataPackage> pck = input_fifos[next_input_selected]->pop(); //Poping from the fifo
             pck->setOutputPort(this->busID); //Setting tracking information to the package 更新数据包的目标端口 
             data_to_send.push_back(pck); //Sending the package to memory 将pck追加到data_to_send向量尾部
             this->collectionbuslineStats.n_sends++; //To track information

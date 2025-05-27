@@ -34,12 +34,13 @@
 //--------------------------------------------------------------------
 class DRAMConfig {
     public:
-        unsigned int input_dram_size;   // KB
-        unsigned int weight_dram_size;    
-        unsigned int output_dram_size;
+        uint64_t input_offset;
+        uint64_t weight_offset;    
+        uint64_t output_offset;
+        uint64_t neuron_state_offset;
     
         void printConfiguration(std::ofstream& out, unsigned int indent);
-    };
+};
 
 //--------------------------------------------------------------------
 // ADD
@@ -171,6 +172,11 @@ public:
     data_t Timestamp;
     Layer_t layer_type;
     pooling_t pooling_type;
+
+    // Network weight parameters
+    int weight_width;
+    int max_weight;
+    int min_weight;
 
     //General parameters
     bool print_stats_enabled;    //Specified whether the statistics must be printed. 

@@ -8,6 +8,7 @@
 
 MultiplierOS::MultiplierOS(id_t id, std::string name, int row_num, int col_num,  Config stonne_cfg): 
 Unit(id, name){
+
     this->row_num = row_num; 
     this->col_num = col_num;  // 在网格中的行列位置 
     //Extracting parameters from configuration file 
@@ -50,6 +51,7 @@ MultiplierOS::~MultiplierOS() {
     delete this->right_fifo;
     delete this->top_fifo;
     delete this->bottom_fifo;
+    delete this->accbuffer_fifo;
 }
 
 void MultiplierOS::resetSignals() {
@@ -74,9 +76,7 @@ void MultiplierOS::resetSignals() {
     while(!bottom_fifo->isEmpty()) {
         bottom_fifo->pop();
     }
-
 }
-
 
 void MultiplierOS::setLeftConnection(Connection* left_connection) { 
     this->left_connection = left_connection;
@@ -122,10 +122,10 @@ void MultiplierOS::send() { //Send the result through the outputConnection
     // 将fifo中的数据向对应方向发送
     
 	//Sending weights 向下发送权重
-    std::vector<DataPackage*> vector_to_send_weights;
+    std::vector<std::shared_ptr<DataPackage>> vector_to_send_weights;
 
 	while(!bottom_fifo->isEmpty()) { 
-        DataPackage* data_to_send = bottom_fifo->pop();
+        std::shared_ptr<DataPackage> data_to_send = bottom_fifo->pop();
         #ifdef DEBUG_MSWITCH_FUNC
             std::cout << "[MSWITCH_FUNC] Cycle " << this->local_cycle << ", MultiplierOS " << this->num << " has forward a data to the bottom connection" << std::endl;
         #endif
@@ -138,9 +138,9 @@ void MultiplierOS::send() { //Send the result through the outputConnection
 	}
 
 	//Sending activations 向右发送输入 
-	std::vector<DataPackage*> vector_to_send_activations;
+	std::vector<std::shared_ptr<DataPackage>> vector_to_send_activations;
     while(!right_fifo->isEmpty()) { 
-        DataPackage* data_to_send = right_fifo->pop();
+        std::shared_ptr<DataPackage> data_to_send = right_fifo->pop();
         #ifdef DEBUG_MSWITCH_FUNC
             std::cout << "[MSWITCH_FUNC] Cycle " << this->local_cycle << ", MultiplierOS " << this->num << " has forward a data to the right connection" << std::endl;
         #endif
@@ -157,9 +157,9 @@ void MultiplierOS::send() { //Send the result through the outputConnection
     // 将可以在PE中实现的累加操作放在累加缓冲区中进行
 	
     //Sending psums to the accumulation buffer
-    std::vector<DataPackage*> vector_to_send_psums;
+    std::vector<std::shared_ptr<DataPackage>> vector_to_send_psums;
     while(!accbuffer_fifo->isEmpty()) {  
-        DataPackage* data_to_send = accbuffer_fifo->pop();
+        std::shared_ptr<DataPackage> data_to_send = accbuffer_fifo->pop();
         #ifdef DEBUG_MSWITCH_FUNC
             std::cout << "[MSWITCH_FUNC] Cycle " << this->local_cycle << ", MultiplierOS " << this->num << " has forward a data to the accumulation buffer" << std::endl;
         #endif
@@ -177,11 +177,11 @@ void MultiplierOS::send() { //Send the result through the outputConnection
 void MultiplierOS::receive() {  //Receive a package either from the left or the top connection
 
     if(left_connection->existPendingData()) {
-        std::vector<DataPackage*> data_received  = left_connection->receive(); 
+        std::vector<std::shared_ptr<DataPackage>> data_received  = left_connection->receive(); 
         //std::cout<<data_received.size()<<std::endl;
         assert(data_received.size() == 1);
         for(int i=0; i<data_received.size(); i++) {
-            DataPackage* pck = data_received[i];
+            std::shared_ptr<DataPackage> pck = data_received[i];
             assert(pck->get_data_type()==IACTIVATION);
             #ifdef DEBUG_MSWITCH_FUNC
                 std::cout << "[MSWITCH_FUNC] Cycle " << this->local_cycle << ", MultiplierOS " << this->num << " has received an IACTIVATION from the left connection" << std::endl;
@@ -193,10 +193,10 @@ void MultiplierOS::receive() {  //Receive a package either from the left or the 
     }
 
     if(top_connection->existPendingData()) {
-        std::vector<DataPackage*> data_received  = top_connection->receive();     
+        std::vector<std::shared_ptr<DataPackage>> data_received  = top_connection->receive();     
         assert(data_received.size() == 1);
         for(int i=0; i<data_received.size(); i++) {
-            DataPackage* pck = data_received[i];
+            std::shared_ptr<DataPackage> pck = data_received[i];
             assert(pck->get_data_type()==WEIGHT);
             #ifdef DEBUG_MSWITCH_FUNC
                 std::cout << "[MSWITCH_FUNC] Cycle " << this->local_cycle << ", MultiplierOS " << this->num << " has received a weight from the top connection" << std::endl;
@@ -210,7 +210,7 @@ void MultiplierOS::receive() {  //Receive a package either from the left or the 
 }
 
 //Perform multiplication with the weight and the activation
-DataPackage* MultiplierOS::perform_operation_2_operands(DataPackage* pck_left, DataPackage* pck_right) {
+std::shared_ptr<DataPackage> MultiplierOS::perform_operation_2_operands(std::shared_ptr<DataPackage> pck_left, std::shared_ptr<DataPackage> pck_right) {
     //Extracting the values
     data_t result; // Result of the operation
     result = pck_left->get_data() *  pck_right->get_data(); 
@@ -220,7 +220,7 @@ DataPackage* MultiplierOS::perform_operation_2_operands(DataPackage* pck_left, D
 
     //Creating the result package with the output
     // this->num是该乘法器节点的ID，实例化部分和数据包 
-    DataPackage* result_pck = new DataPackage (sizeof(data_t), result, PSUM, this->num, this->VN, MULTIPLIER);  //TODO the size of the package corresponds with the data size
+    std::shared_ptr<DataPackage> result_pck = std::make_shared<DataPackage> (sizeof(data_t), result, PSUM, this->num, this->VN, MULTIPLIER);  //TODO the size of the package corresponds with the data size
     //Adding to the creation list to be deleted afterward
     //this->psums_created.push_back(result_pck);
     this->mswitchStats.n_multiplications++; // Track a multiplication
@@ -241,25 +241,27 @@ void MultiplierOS::cycle() { //Computing a cycle
 
     if((!left_fifo->isEmpty()) && (!top_fifo->isEmpty())) { //If both queues are not empty
 
-        DataPackage* activation = left_fifo->pop(); //Get the activation and remove from fifo
-        DataPackage* weight = top_fifo->pop(); //get the weight and remove from fifo
-        DataPackage* pck_result = perform_operation_2_operands(activation, weight); //Creating the psum package
+        std::shared_ptr<DataPackage> activation = left_fifo->pop(); //Get the activation and remove from fifo
+        std::shared_ptr<DataPackage> weight = top_fifo->pop(); //get the weight and remove from fifo
+        std::shared_ptr<DataPackage> pck_result = perform_operation_2_operands(activation, weight); //Creating the psum package
         accbuffer_fifo->push(pck_result); //Sending to the accbuffer to be accumulated in OS manner
 
 	    //Forwarding the weight and the activation
 	    if(forward_right) {  //If this ms is not in the last column (i.e., filter in conv)
 	        right_fifo->push(activation);
 	    }
-	    else {
-                delete activation;
-	    } 
+	    // else {
+        //         delete activation;
+        //         activation = nullptr;
+	    // } 
 
 	    if(forward_bottom) { //if this ms is not in the last row (i.e., last conv window in conv))
 	        bottom_fifo->push(weight);
 	    }
-	    else {
-                delete weight;
-	    }
+	    // else {
+        //         delete weight;
+        //         weight = nullptr;
+	    // }
 
 	    this->send();
        

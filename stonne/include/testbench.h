@@ -7,6 +7,9 @@ int* input, int* filters, int* outputs, int* neuron_state, int Vth, int Timestam
 
 void matrixMultiply(int M, int K, int N, int* input, int* weight, int* output, int* neuron_state, int V_th, int num_tile);
 
+// 连续计算多个tile的输出结果存储到一个输出中
+void matrixMultiply_new(int M, int K, int N, int* input, int* weight, int* output, int* neuron_state, int V_th, int num_tile, int rows);
+
 void pooling_compute(int X, int Y, int C, int R, int S, int stride, int* input, int* output);
 
 void conv_compute(int R, int S, int C, int K, int P, int strides, int X, int Y, int* input, int* filters, int* output, int* neuron_state, int V_th);

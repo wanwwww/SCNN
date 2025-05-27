@@ -42,21 +42,27 @@ void Config::loadFile(std::string config_file) {
         }
     }
 
-    // DRAM 
-    auto input_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.input_dram_size");
-    if(input_dram_size_conf){
-        this->m_DRAMCfg.input_dram_size = *input_dram_size_conf;
+    // weight
+    auto weight_width_conf = config->get_qualified_as<int>("WEIGHT.weight_width");
+    if(weight_width_conf){
+        this->weight_width = *weight_width_conf;
     }
 
-    auto weight_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.weight_dram_size");
-    if(weight_dram_size_conf){
-        this->m_DRAMCfg.weight_dram_size = *weight_dram_size_conf;
-    }
+    // // DRAM 
+    // auto input_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.input_dram_size");
+    // if(input_dram_size_conf){
+    //     this->m_DRAMCfg.input_dram_size = *input_dram_size_conf;
+    // }
 
-    auto output_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.output_dram_size");
-    if(output_dram_size_conf){
-        this->m_DRAMCfg.output_dram_size = *output_dram_size_conf;
-    }
+    // auto weight_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.weight_dram_size");
+    // if(weight_dram_size_conf){
+    //     this->m_DRAMCfg.weight_dram_size = *weight_dram_size_conf;
+    // }
+
+    // auto output_dram_size_conf = config->get_qualified_as<unsigned int>("DRAM.output_dram_size");
+    // if(output_dram_size_conf){
+    //     this->m_DRAMCfg.output_dram_size = *output_dram_size_conf;
+    // }
 
     // On-chip Buffer
     auto input_buffer_size_conf = config->get_qualified_as<unsigned int>("On_Chip_Buffer.input_buffer_size");
@@ -204,6 +210,11 @@ void Config::reset() {
 //General parameters
     print_stats_enabled=true;
 
+// Network weight parameters
+    weight_width = 4;
+    max_weight = 7;
+    min_weight = -8;
+
 // ---------------------------------------------------------
 // DSNetwork Configuration Parameters
 // ---------------------------------------------------------
@@ -222,9 +233,10 @@ void Config::reset() {
 // ---------------------------------------------------------
 // DRAM configuration parameters
 // ---------------------------------------------------------
-    m_DRAMCfg.input_dram_size = 2;  // size in MB
-    m_DRAMCfg.weight_dram_size = 3;
-    m_DRAMCfg.output_dram_size = 2;
+    m_DRAMCfg.input_offset = 0;  // Start address offset (byte)
+    m_DRAMCfg.weight_offset = 0;
+    m_DRAMCfg.output_offset = 0;
+    m_DRAMCfg.neuron_state_offset = 0;
 
 // ---------------------------------------------------------
 // On-chip buffer configuration parameters
@@ -375,9 +387,9 @@ void Config::printConfiguration(std::ofstream& out, unsigned int indent) {
 // -----------------------------------------------------------------------------------------------
 void DRAMConfig::printConfiguration(std::ofstream& out, unsigned int indent){
     out << ind(indent) << "\"DRAM Buffer\" : {"<<std::endl; // ind是一个自定义的函数，用于生成一个缩进
-    out << ind(indent+IND_SIZE) << "\"input_dram_size\" : " << this->input_dram_size << "," << std::endl;
-    out << ind(indent+IND_SIZE) << "\"weight_dram_size\" : " << this->weight_dram_size << "," << std::endl;
-    out << ind(indent+IND_SIZE) << "\"output_dram_size\" : " << this->output_dram_size << "," << std::endl;
+    out << ind(indent+IND_SIZE) << "\"input_dram_size\" : " << this->input_offset << "," << std::endl;
+    out << ind(indent+IND_SIZE) << "\"weight_dram_size\" : " << this->weight_offset << "," << std::endl;
+    out << ind(indent+IND_SIZE) << "\"output_dram_size\" : " << this->output_offset << "," << std::endl;
     out << ind(indent) << "}";
 }
 
@@ -392,7 +404,6 @@ void BufferConfig::printConfiguration(std::ofstream& out, unsigned int indent){
     out << ind(indent+IND_SIZE) << "\"output_buffer_size\" : " << this->output_buffer_size << "," << std::endl;
     out << ind(indent) << "}";
 }
-
 
 // -----------------------------------------------------------------------------------------------
 // MSNetworkConfig printing function

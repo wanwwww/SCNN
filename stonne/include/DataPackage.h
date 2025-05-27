@@ -3,6 +3,7 @@
 #ifndef __data_package_h__
 #define __data_package_h__
 
+#include <memory>
 #include "types.h"
 #include <iostream>
 #include <vector>
@@ -48,6 +49,9 @@ public:
     unsigned int iteration_g; //Indicates the g value of this package (i.e., the number of g iteration). This is used to avoid sending packages of some iteration g and k without having performing the previous ones.
     unsigned int iteration_k; //Indicates the k value of this package (i.e, the number of k iteration). This is used to avoid sending packages of some iteration k (output channel k) without having performed the previous iterations yet
     
+
+    virtual ~DataPackage() = default;
+    
     //General constructor to be reused in both types of packages
     DataPackage(size_t size_package, data_t data, operand_t data_type, id_t source);
 
@@ -67,8 +71,11 @@ public:
 
     //ART Package constructor (only one package for this type)
     DataPackage(size_t size_package, data_t data, operand_t data_type, id_t source, unsigned int VN, adderoperation_t operation_mode);
-    ~DataPackage();
-    DataPackage(DataPackage* pck); //Constructor copy used to repeat a package
+    // ~DataPackage();
+    
+    DataPackage(std::shared_ptr<DataPackage> pck); //Constructor copy used to repeat a package
+
+    
 
     //Getters 访问器方法，用于访问私有成员变量
     const size_t get_size_package()            const {return this->size_package;}

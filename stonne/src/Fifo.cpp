@@ -19,7 +19,7 @@ bool Fifo::isEmpty() {
     return this->fifo.size()==0;
 }
 
-void Fifo::push(DataPackage* data) {
+void Fifo::push(std::shared_ptr<DataPackage> data) {
 //    assert(!isFull());  //The fifo must not be full
     fifo.push(data); //Inserting at the end of the queue
     if(this->size() > this->fifoStats.max_occupancy) {
@@ -29,17 +29,17 @@ void Fifo::push(DataPackage* data) {
     
 }
 
-DataPackage* Fifo::pop() {
+std::shared_ptr<DataPackage> Fifo::pop() {
     assert(!isEmpty());
     this->fifoStats.n_pops+=1; //To track information
-    DataPackage* pck = fifo.front(); //Accessing the first element of the queue
+    std::shared_ptr<DataPackage> pck = fifo.front(); //Accessing the first element of the queue
     fifo.pop(); //Extracting the first element
     return pck; 
 }
 
-DataPackage* Fifo::front() {
+std::shared_ptr<DataPackage> Fifo::front() {
     assert(!isEmpty());
-    DataPackage* pck = fifo.front();
+    std::shared_ptr<DataPackage> pck = fifo.front();
     this->fifoStats.n_fronts+=1; //To track information
     return pck;
 }

@@ -1,0 +1,4749 @@
+Call runConv_DataFlow_2 function !!! 1
+[1;33mStart simulation layer : [0m1 conv
+=============================================== weight loop ===================================================== 0/1
+num_weight_data : 432
+load weight cycles : 258
+load the first input cycles : 112
+current weight loop begin cycles : 370
+======================================== input loop ========================================= 0/63
+load input cycles : 92
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 1156
+======================================== input loop ========================================= 1/63
+load input cycles : 269
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 1942
+======================================== input loop ========================================= 2/63
+load input cycles : 191
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 2728
+======================================== input loop ========================================= 3/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 3514
+======================================== input loop ========================================= 4/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 4300
+======================================== input loop ========================================= 5/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 5086
+======================================== input loop ========================================= 6/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 5872
+======================================== input loop ========================================= 7/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 6658
+======================================== input loop ========================================= 8/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 7444
+======================================== input loop ========================================= 9/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 8230
+======================================== input loop ========================================= 10/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 9016
+======================================== input loop ========================================= 11/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 9802
+======================================== input loop ========================================= 12/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 10588
+======================================== input loop ========================================= 13/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 11374
+======================================== input loop ========================================= 14/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 12160
+======================================== input loop ========================================= 15/63
+load input cycles : 953
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 13113
+======================================== input loop ========================================= 16/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 13899
+======================================== input loop ========================================= 17/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 14685
+======================================== input loop ========================================= 18/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 15471
+======================================== input loop ========================================= 19/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 16257
+======================================== input loop ========================================= 20/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 17043
+======================================== input loop ========================================= 21/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 17829
+======================================== input loop ========================================= 22/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 18615
+======================================== input loop ========================================= 23/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 19401
+======================================== input loop ========================================= 24/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 20187
+======================================== input loop ========================================= 25/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 20973
+======================================== input loop ========================================= 26/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 21759
+======================================== input loop ========================================= 27/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 22545
+======================================== input loop ========================================= 28/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 23331
+======================================== input loop ========================================= 29/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 24117
+======================================== input loop ========================================= 30/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 24903
+======================================== input loop ========================================= 31/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 25689
+======================================== input loop ========================================= 32/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 26475
+======================================== input loop ========================================= 33/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 27261
+======================================== input loop ========================================= 34/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 28047
+======================================== input loop ========================================= 35/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 28833
+======================================== input loop ========================================= 36/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 29619
+======================================== input loop ========================================= 37/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 30405
+======================================== input loop ========================================= 38/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 31191
+======================================== input loop ========================================= 39/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 31977
+======================================== input loop ========================================= 40/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 32763
+======================================== input loop ========================================= 41/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 33549
+======================================== input loop ========================================= 42/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 34335
+======================================== input loop ========================================= 43/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 35121
+======================================== input loop ========================================= 44/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 35907
+======================================== input loop ========================================= 45/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 36693
+======================================== input loop ========================================= 46/63
+load input cycles : 855
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 37548
+======================================== input loop ========================================= 47/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 38334
+======================================== input loop ========================================= 48/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 39120
+======================================== input loop ========================================= 49/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 39906
+======================================== input loop ========================================= 50/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 40692
+======================================== input loop ========================================= 51/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 41478
+======================================== input loop ========================================= 52/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 42264
+======================================== input loop ========================================= 53/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 43050
+======================================== input loop ========================================= 54/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 43836
+======================================== input loop ========================================= 55/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 44622
+======================================== input loop ========================================= 56/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 45408
+======================================== input loop ========================================= 57/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 46194
+======================================== input loop ========================================= 58/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 46980
+======================================== input loop ========================================= 59/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 47766
+======================================== input loop ========================================= 60/63
+load input cycles : 215
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 48552
+======================================== input loop ========================================= 61/63
+load input cycles : 343
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 49338
+======================================== input loop ========================================= 62/63
+load input cycles : 191
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 50124
+======================================== input loop ========================================= 63/63
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 50910
+=============================================== weight loop ===================================================== 1/1
+num_weight_data : 432
+load weight cycles : 710
+load the first input cycles : 112
+current weight loop begin cycles : 51732
+======================================== input loop ========================================= 0/63
+load input cycles : 92
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 52518
+======================================== input loop ========================================= 1/63
+load input cycles : 214
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 53304
+======================================== input loop ========================================= 2/63
+load input cycles : 217
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 54090
+======================================== input loop ========================================= 3/63
+load input cycles : 192
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 54876
+======================================== input loop ========================================= 4/63
+load input cycles : 169
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 55662
+======================================== input loop ========================================= 5/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 56448
+======================================== input loop ========================================= 6/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 57234
+======================================== input loop ========================================= 7/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 58020
+======================================== input loop ========================================= 8/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 58806
+======================================== input loop ========================================= 9/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 59592
+======================================== input loop ========================================= 10/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 60378
+======================================== input loop ========================================= 11/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 61164
+======================================== input loop ========================================= 12/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 61950
+======================================== input loop ========================================= 13/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 62736
+======================================== input loop ========================================= 14/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 63522
+======================================== input loop ========================================= 15/63
+load input cycles : 811
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 64333
+======================================== input loop ========================================= 16/63
+load input cycles : 191
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 65119
+======================================== input loop ========================================= 17/63
+load input cycles : 176
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 65905
+======================================== input loop ========================================= 18/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 66691
+======================================== input loop ========================================= 19/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 67477
+======================================== input loop ========================================= 20/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 68263
+======================================== input loop ========================================= 21/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 69049
+======================================== input loop ========================================= 22/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 69835
+======================================== input loop ========================================= 23/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 70621
+======================================== input loop ========================================= 24/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 71407
+======================================== input loop ========================================= 25/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 72193
+======================================== input loop ========================================= 26/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 72979
+======================================== input loop ========================================= 27/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 73765
+======================================== input loop ========================================= 28/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 74551
+======================================== input loop ========================================= 29/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 75337
+======================================== input loop ========================================= 30/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 76123
+======================================== input loop ========================================= 31/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 76909
+======================================== input loop ========================================= 32/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 77695
+======================================== input loop ========================================= 33/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 78481
+======================================== input loop ========================================= 34/63
+load input cycles : 176
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 79267
+======================================== input loop ========================================= 35/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 80053
+======================================== input loop ========================================= 36/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 80839
+======================================== input loop ========================================= 37/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 81625
+======================================== input loop ========================================= 38/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 82411
+======================================== input loop ========================================= 39/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 83197
+======================================== input loop ========================================= 40/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 83983
+======================================== input loop ========================================= 41/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 84769
+======================================== input loop ========================================= 42/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 85555
+======================================== input loop ========================================= 43/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 86341
+======================================== input loop ========================================= 44/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 87127
+======================================== input loop ========================================= 45/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 87913
+======================================== input loop ========================================= 46/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 88699
+======================================== input loop ========================================= 47/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 89485
+======================================== input loop ========================================= 48/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 90271
+======================================== input loop ========================================= 49/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 91057
+======================================== input loop ========================================= 50/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 91843
+======================================== input loop ========================================= 51/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 92629
+======================================== input loop ========================================= 52/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 93415
+======================================== input loop ========================================= 53/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 94201
+======================================== input loop ========================================= 54/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 94987
+======================================== input loop ========================================= 55/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 95773
+======================================== input loop ========================================= 56/63
+load input cycles : 783
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 96559
+======================================== input loop ========================================= 57/63
+load input cycles : 170
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 97345
+======================================== input loop ========================================= 58/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 98131
+======================================== input loop ========================================= 59/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 98917
+======================================== input loop ========================================= 60/63
+load input cycles : 175
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 99703
+======================================== input loop ========================================= 61/63
+load input cycles : 167
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 100489
+======================================== input loop ========================================= 62/63
+load input cycles : 151
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 101275
+======================================== input loop ========================================= 63/63
+
+************************************************************************
+Sort the input for the first time : 162         local_cycles : 162
+num_tile : 0-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 306
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 450
+[1;32mTest passed correctly[0m
+
+num_tile : 2-------------
+Sort next input_arranged : 144
+compute the tile need cycles : 63
+current local_cycles is : 594
+[1;32mTest passed correctly[0m
+
+num_tile : 3-------------
+Sort next input_arranged : 0
+compute the tile need cycles : 63
+current local_cycles is : 657
+[1;32mTest passed correctly[0m
+
+compute over, local_cycles is : 657
+************************************************************************
+
+process_conv cycles : 673
+write result cycles : 113
+process_conv and write result cycles : 786
+
+Global cycles : 102061
+current cycles : 102061
+[1;32mOVER Test passed correctly[0m
+

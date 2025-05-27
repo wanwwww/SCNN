@@ -20,19 +20,20 @@ bool Connection::existPendingData() {
 
 // 向连接中发送数据 
 //Send a package to the interconnection. If there is no remaining bandiwth an exception is raised
-void Connection::send(vector<DataPackage*> data_p) {
-#ifdef DEBUG
-    //Check the connection is not busy
-    assert(pending_data==false);
-    //Check there is enouth bandwidth. This case should not happen so if happens, an assert is raised. 
-    this->current_capacity=0;
-    for(int i=0; i<data_p.size(); i++) {
-        DataPackage* current_package = data_p[i];
-	//Check there is enouth bandwidth. This case should not happen so if happens, an assert is raised
-	assert( (current_package->get_size_package() + this->current_capacity) <= this->bw );   
-	this->current_capacity += current_package->get_size_package(); //Increasing the amount of data in the connection
-    }
-#endif
+void Connection::send(vector<std::shared_ptr<DataPackage>> data_p) {
+// #ifdef DEBUG
+//     //Check the connection is not busy
+//     assert(pending_data==false);
+//     //Check there is enouth bandwidth. This case should not happen so if happens, an assert is raised. 
+//     this->current_capacity=0;
+//     for(int i=0; i<data_p.size(); i++) {
+//         std::shared_ptr<DataPackage> current_package = data_p[i];
+// 	//Check there is enouth bandwidth. This case should not happen so if happens, an assert is raised
+// 	assert( (current_package->get_size_package() + this->current_capacity) <= this->bw );   
+// 	this->current_capacity += current_package->get_size_package(); //Increasing the amount of data in the connection
+//     }
+// #endif
+
     this->data = data_p; //list of pointers assignment. All the vectors are replicated to save a copy and track it.
     this->pending_data = true;
     
@@ -41,7 +42,7 @@ void Connection::send(vector<DataPackage*> data_p) {
     return; 
 }
 
-void Connection::send_pooling_result(DataPackage* data) {
+void Connection::send_pooling_result(std::shared_ptr<DataPackage> data) {
 
     this->data_pooling_result = data; //list of pointers assignment. All the vectors are replicated to save a copy and track it.
     this->pending_data = true;
@@ -53,7 +54,7 @@ void Connection::send_pooling_result(DataPackage* data) {
 
 // 从连接中接收数据  
 //Return the packages from the interconnection
-vector<DataPackage*> Connection::receive() { 
+vector<std::shared_ptr<DataPackage>> Connection::receive() { 
     
     if(this->pending_data) {
             this->pending_data = false;
@@ -70,7 +71,7 @@ vector<DataPackage*> Connection::receive() {
     return data; //Return empty list indicating that there is no data
 }
 
-DataPackage* Connection::receive_pooling_result() { 
+std::shared_ptr<DataPackage> Connection::receive_pooling_result() { 
     
     if(this->pending_data) {
             this->pending_data = false;

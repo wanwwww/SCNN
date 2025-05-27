@@ -1,0 +1,342 @@
+Call runConvandPooling_DataFlow_1 function !!! 1
+[1;33mStart simulation layer : [0m1 conv_pooling
+=============================================== weight loop ===================================================== 0/0
+======================================== input loop ========================================= 0/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 1/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 2/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 3/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 4/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 5/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 6/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 7/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 8/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 9/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 10/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 11/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 12/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 13/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 14/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 15/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 16/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 17/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 18/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 19/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 20/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 21/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 22/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 23/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 24/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 25/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+======================================== input loop ========================================= 26/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+======================================== input loop ========================================= 27/27
+num_tile : 0-------------
+rows : 16
+cols : 6
+[1;32mTest passed correctly[0m
+
+num_tile : 1-------------
+rows : 12
+cols : 6
+[1;32mTest passed correctly[0m
+
+[1;32m POOLING layer Test passed correctly[0m
+
+current cycles : 27242
+[1;32mOVER Test passed correctly[0m
+

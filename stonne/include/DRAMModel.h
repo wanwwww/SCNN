@@ -21,6 +21,7 @@ public:
     ~Dram();
 
     void run();
+    void run_1(int layer_id, int j, int completed_reads);
 
     void set_read_request_fifo(Fifo* read_request_fifo){this->read_request_fifo = read_request_fifo;}
     void set_write_request_fifo(Fifo* write_request_fifo){this->write_request_fifo = write_request_fifo;}

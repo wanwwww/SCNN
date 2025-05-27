@@ -25,7 +25,7 @@ Bus::Bus(id_t id, std::string name, Config stonne_cfg) : Unit(id, name) {
 
     // 创建每条总线线 
     for(int i=0; i<n_bus_lines; i++) {
-        std::string name="CollectionBusLine "+i;
+        std::string name="CollectionBusLine ";
         CollectionBusLine* busline = new CollectionBusLine(i, name, i, this->input_ports_bus_line, this->connection_width, this->fifo_size); 
         collection_bus_lines.push_back(busline);
     }

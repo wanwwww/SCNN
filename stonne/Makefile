@@ -1,7 +1,20 @@
 CXX=g++-9
-CXXFLAGS= -std=c++17 -O3 -Iinclude/ -Iexternal/ -I/home/zww/DRAMsim3/src    #-ltcmalloc  -fno-builtin-malloc -fno-builtin-calloc -fno-builtin-realloc -fno-builtin-free
-#DEBUGFLAGS= -O0 -g
-#DEBUGFLAGS=-D DEBUG_MEM_OUTPUT -D DEBUG_MSWITCH_FUNC
+
+MODE ?= release
+
+ifeq ($(MODE),debug)
+	CXXFLAGS= -std=c++17 -g -O0 -Iinclude/ -Iexternal/ -I/home/zww/DRAMsim3/src
+	DEBUGFLAGS= -DDEBUG
+else
+	CXXFLAGS= -std=c++17 -O3 -Iinclude/ -Iexternal/ -I/home/zww/DRAMsim3/src
+	DEBUGFLAGS=
+endif
+
+# CXXFLAGS= -std=c++17 -O3 -Iinclude/ -Iexternal/ -I/home/zww/DRAMsim3/src    #-ltcmalloc  -fno-builtin-malloc -fno-builtin-calloc -fno-builtin-realloc -fno-builtin-free
+
+
+# DEBUGFLAGS= -O0 -g
+# DEBUGFLAGS=-D DEBUG_MEM_OUTPUT -D DEBUG_MSWITCH_FUNC
 #-D DEBUG_MEM_OUTPUT -D DEBUG_MEM_INPUT -D DEBUG_ASWITCH_CONFIG -D DEBUG_ASWITCH_FUNC -D DEBUG_MSWITCH_CONFIG -D DEBUG_MSWITCH_FUNC
 
 # add 
